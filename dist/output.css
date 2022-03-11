@@ -468,8 +468,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .flex {
   display: flex;
+}
+
+.max-h-16 {
+  max-height: 4rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -480,18 +497,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
-.flex-col {
-  flex-direction: column;
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
-.bg-red-600 {
+.bg-XBlueMiddle {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(11 138 188 / var(--tw-bg-opacity));
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.text-XBlueStrong {
+  --tw-text-opacity: 1;
+  color: rgb(18 78 150 / var(--tw-text-opacity));
 }
 
 .transition {
