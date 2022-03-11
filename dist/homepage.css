@@ -1,0 +1,198 @@
+
+body{
+    
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+
+/* page d'accueil */
+
+
+.big-title {
+    color: whitesmoke;
+    font-size: 80px;
+    
+}
+.diaporama {
+    position: relative;
+    overflow: hidden;
+}
+
+/*diaporama defilement */
+
+.images {
+    display: flex;
+}
+
+.image {
+    background-color: #daeaf6 ;
+    flex: 1 0 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.image > img{
+    width: 100%;
+
+}
+
+#gauche, #droite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff008e;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#droite {
+    right: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+} 
+
+
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+.X-tree-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+.X-heal-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+.X-save-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+
+
+
+Actualites
+
+.section-title {
+    padding: 30px;
+    font-size: 100px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #dd9d3cfd;
+    width: 1319px;
+    height: 25px;
+    bottom: 0;
+}
+
+
+.actu {
+    min-height: 500px;
+    display: grid;
+    flex-wrap: wrap;
+    
+}
+
+.actu-box {
+    display: flex;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+    max-width: 650px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.actu1 {
+    background-image: url(../images/croco.jpg);
+    border-style: ridge;
+    border-color: #dd9d3cfd;
+}
+
+.croco {
+    font-size: 22px;
+    display: flex;
+    text-align: justify;
+    margin-left: 4px;
+    width: 590px;
+    padding: 25;
+
+}
+
+/* header.header1 {
+    display: flex;
+}
+header.header1 img {
+    width: 700px;
+
+}
+
+nav.nav1 {
+    font-size: large;
+    display: flex;
+    text-align: justify;
+    margin-left: 4px;
+    width: 700px;
+    padding: 25;
+}
+
