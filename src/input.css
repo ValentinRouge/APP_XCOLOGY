@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-header {
+        @apply transition py-1 px-2 hover:bg-slate-200 hover:bg-opacity-20 active:bg-white active:text-XBlueStrong rounded-lg bottom-1/2 self-center;
+    }
+}
