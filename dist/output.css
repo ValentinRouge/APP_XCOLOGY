@@ -496,6 +496,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(18 78 150 / var(--tw-text-opacity));
 }
 
+.img-memory {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.collone-memory {
+  margin-left: 0.75rem;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
