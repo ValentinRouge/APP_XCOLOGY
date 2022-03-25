@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<footer>
+    <div class="contenu-footer">
+        <div class=" blo-footer services">
+            <h1>Rester en contact</h1>
+            <ul class="list-">
+                <p> <a href="#">77-77-77-77-77</a></p>
+                <p> <a href="#">SAV@lezoocestgenial.com</a></p>
+                <p> <a href="#">13 rue Jean Louis Baudin</a></p>
+
+            </ul>
+        </div>
+
+        <div class=" blo-footer services">
+            <h1>Les horaires</h1>
+            <ul class="liste horaires">
+                <li> <a href="#">Lun 9h-19h</a></li>
+                <li> <a href="#">Mar 9h-19h</a></li>
+                <li> <a href="#">Mer 9h-19h</a></li>
+                <li> <a href="#">Jeu 9h-19h</a></li>
+                <li> <a href="#">Ven 9h-19h</a></li>
+                <li> <a href="#">Sam fermé</a></li>
+                <li> <a href="#">Dim fermé</a></li>
+
+            </ul>
+        </div>
+
+        <div class=" blo-footer services">
+            <h1>Nos réseaux</h1>
+            <ul class="list-média">
+                <li> <a href="#"><img src="medias/fb.svg" alt="icones réseaux sociaux">Facebook/monsite</a></li>
+                <li> <a href="#"><img src="medias/instagram.svg" alt="icones réseaux sociaux">Instagram/monsite</a></li>
+                <li> <a href="#"><img src="medias/twitter.svg" alt="icones réseaux sociaux">Twitter/monsite</a></li>
+                <li> <a href="#"><img src="medias/youtube.svg" alt="icones réseaux sociaux">Youtube/monsite</a></li>
+
+            </ul>
+        </div>
+
+        <div class=" blo-footer services">
+            <h1>Mentions légales</h1>
+
+        </div>
+
+    </div>
+
+
+
+
+</footer>
