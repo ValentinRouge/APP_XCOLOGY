@@ -468,8 +468,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.btn-header {
+  bottom: 50%;
+  align-self: center;
+  border-radius: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-header:hover {
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+}
+
+.btn-header:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(18 78 150 / var(--tw-text-opacity));
+}
+
+.img-memory {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.collone-memory {
+  margin-left: 0.75rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.max-h-16 {
+  max-height: 4rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -480,18 +536,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
-.flex-col {
-  flex-direction: column;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.bg-red-600 {
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.bg-XBlueStrong {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(18 78 150 / var(--tw-bg-opacity));
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.text-XBlueLight {
+  --tw-text-opacity: 1;
+  color: rgb(218 234 246 / var(--tw-text-opacity));
 }
 
 .transition {
