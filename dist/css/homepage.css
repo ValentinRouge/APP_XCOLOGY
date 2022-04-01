@@ -1,0 +1,109 @@
+
+
+
+body{
+    background-color: #daeaf6;
+    width: 80%;
+    margin: 0 auto;
+}   
+
+/* tete de page */
+
+
+/* page d'accueil */
+
+
+
+.big-title {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #124e96;
+    font-size: 50px;
+    
+}
+.diaporama {
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.caption{
+    color:#0e161b;
+    position:absolute;
+    top: 80%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    padding: 30px;
+    font-size: 20px;
+}
+
+/*diaporama defilement */
+
+.images {
+    display: flex;
+}
+
+.image {
+    flex: 1 0 100%;
+    position: relative;
+}
+.image > img{
+    width: 100%;
+
+}
+
+#gauche, #droite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff008e;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#droite {
+    right: 0
+}
+
+.scroll-down {
+    color: #ff008e;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+.X-tree-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+.X-heal-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+.X-save-icon {
+    font-size: 50px;
+    color: #68ac25;
+}
+
