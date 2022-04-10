@@ -1,5 +1,5 @@
 <?php 
-    include 'header.html';
-    include 'mini-jeu.html';
-    include 'footer.html';
+    include 'html/header.html';
+    include 'html/mini-jeu.html';
+    include 'html/footer.html';
 ?>
