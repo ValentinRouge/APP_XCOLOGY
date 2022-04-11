@@ -45,3 +45,12 @@ body {
 .image{
     height: 3em;
 }
+
+@media screen and (max-width: 800px ){
+    body{
+        display:empty;
+        background-image: url(img/Xcolozoo-deco.jpg);
+    }
+  
+
+}
