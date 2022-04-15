@@ -7,6 +7,9 @@ module.exports = {
         'XBlueMiddle': '#0b8abc',
         'XBlueStrong': '#124e96',
         'XPink': '#ff008e'
+      }, 
+      spacing: {
+        '90vh': '90vh',
       }
     },
   },
