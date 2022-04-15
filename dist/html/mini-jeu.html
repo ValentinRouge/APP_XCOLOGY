@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>XCOLOGY</title>
-        <link href="css/output.css" rel="stylesheet">
-        <script src="js/mini-jeu.js"></script>
+        <link href="../css/output.css" rel="stylesheet">
     </head>
-    <body>
-        <h1>Le mini jeu</h1>
-        <p>Découvrez les animaux de la savane. 8 couples d'annimaux identiques sont cachés sur cette page. Retrouvez les paires identiques !</p>
-        <div class="flex flex-row">
+    <body class="bg-XBlueLight">
+        <h1 class="text-3xl text-center text-XBlueStrong font-bold">Le mini jeu</h1>
+        <p class="ml-2">Découvrez les animaux de la savane. 8 couples d'annimaux identiques sont cachés sur cette page. Retrouvez les paires identiques !</p>
+        <div class="flex flex-row justify-center">
             <div class="collone-memory">
-                <img class="img-memory" id="IMG1-1">
+                <img class="img-memory" id="IMG1-1" onclick="test()">
                 <img class="img-memory" id="IMG1-2">
                 <img class="img-memory" id="IMG1-3">
                 <img class="img-memory" id="IMG1-4">
@@ -35,5 +34,6 @@
                 <img class="img-memory" id="IMG4-4">
             </div>
         </div>
+        <script src="../js/mini-jeu.js"></script>
     </body>
 </html>
