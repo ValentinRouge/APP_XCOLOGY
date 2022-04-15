@@ -1,3 +1,4 @@
+<<<<<<< HEAD:dist/page-zoo.css
 body {
     color:black;
     background-color:white ;
@@ -54,3 +55,45 @@ body {
   
 
 }
+=======
+body {
+    color:black;
+    background-color:white ;
+    background-image: url(img/page-de-deconnexion.jpg);
+    background-size: 100%;
+
+}
+#texte_deconnexion{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 11%;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+    
+}
+#imffefeages{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    max-width: 1px;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.image{
+    height: 3em;
+}
+>>>>>>> c01176b731c3463a94c957b347e8588800bf8cea:dist/css/page-deconnexion.css
