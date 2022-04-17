@@ -507,9 +507,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.right-1\/2 {
+  right: 50%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.right-1\/3 {
+  right: 33.333333%;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ml-2 {
@@ -520,16 +561,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .max-h-16 {
   max-height: 4rem;
 }
 
-.max-h-96 {
-  max-height: 24rem;
-}
-
 .w-40 {
   width: 10rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grow {
@@ -576,6 +625,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(218 234 246 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -597,6 +651,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-XBlueLight {
   --tw-text-opacity: 1;
   color: rgb(218 234 246 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-XBlueStrong {
