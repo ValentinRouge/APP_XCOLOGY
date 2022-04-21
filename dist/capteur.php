@@ -1,7 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
 
-
-<?php
-$connection = mysqli_connect("herogu.garageisep.com", "ETgzwb9R7W_appg10b", "SlF7CIqbxeiI45Gl","GFAheoPxRI_appg10b");
-$query = mysqli_query($connection,"select * from Utilisateur");
-print(mysqli_num_rows($query))
-?>
+    <title>Capteur zone singe</title>
+</head>
+<body>
+    <div>
+        <h1 class="absolute">Capteur zone singe</h1>
+        <img class="w-full" src="/img/page_singe.jpg" alt="image d'un singe">
+    </div>
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -520,14 +520,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mt-40 {
@@ -554,12 +554,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 4rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .grow {
@@ -629,14 +629,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-.text-XBlueLight {
-  --tw-text-opacity: 1;
-  color: rgb(218 234 246 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-XBlueLight {
+  --tw-text-opacity: 1;
+  color: rgb(218 234 246 / var(--tw-text-opacity));
 }
 
 .text-XBlueStrong {
