@@ -1,0 +1,27 @@
+body {
+    color: black;
+    background-color:#daeaf6;;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+#bande{
+    display: flex;
+    background-color: #0D8ABC;
+    width: 20%;
+    height: 20000000px;
+    text-align: left;
+
+}
+
+
+.images{
+    align-items: center;
+    max-height: 5%;
+}
