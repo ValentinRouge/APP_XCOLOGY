@@ -5,23 +5,33 @@ body {
     background-repeat: no-repeat;
 }
 
-#Titre{
+.Titre{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: left;
-    text-align: left;
+    font-size: 100px;
+
 }
-#bande{
+#images{
     display: flex;
-    background-color: #0D8ABC;
-    width: 20%;
-    height: 20000000px;
-    text-align: left;
-
+    justify-content: space-between;
+    justify-content: space-around;
 }
-
-
 .images{
-    align-items: center;
-    max-height: 5%;
+    height: 3em;
 }
+
+.bande{
+    display: flex;
+    display: flexbox;
+    background-color: #0D8ABC;
+    flex-direction: row;
+    max-width: 100%;
+    font-size: 300%;
+    justify-content: space-between;
+    justify-content: space-around;
+    
+
+}
+
+
