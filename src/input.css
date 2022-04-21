@@ -4,7 +4,7 @@
 
 @layer components {
     .btn-header {
-        @apply transition py-1 px-2 text-center hover:bg-slate-200 hover:bg-opacity-20 active:bg-white active:text-XBlueStrong rounded-lg bottom-1/2 self-center;
+        @apply transition py-1 px-2 text-center hover:bg-slate-200 hover:bg-opacity-20 active:bg-white active:text-XBlueStrong rounded-lg bottom-1/2 self-center duration-300 cursor-pointer;
     }
 
     .img-memory{
