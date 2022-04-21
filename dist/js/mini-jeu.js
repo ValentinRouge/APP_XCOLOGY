@@ -5,6 +5,7 @@ var past1;
 var past2;
 var state = 0;
 var founded = [];
+var precID;
 
 window.addEventListener("DOMContentLoaded", (event) => {
     images = new Object();
@@ -108,7 +109,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 function onCardClick(Element){
     var actual = Element.getAttribute("id");
-    if (!(founded.includes(actual))){
+    if ((!(founded.includes(actual))) && actual != precID){
+        precID = actual;
         Element.setAttribute("src","../img/"+images[actual]+".jpg")
         console.log(founded);
         switch(state){
