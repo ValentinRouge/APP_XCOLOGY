@@ -8,11 +8,34 @@
 
     <title>Capteur zone singe</title>
 </head>
-<body>
-    <div>
-        <h1 class="absolute text-center text-2xl ml mt-10">Capteur zone singe</h1>
-        <img class="w-full" src="/img/page_singe.jpg" alt="image d'un singe">
+<body class="bg-XBlueLight">
+    <?php include 'html/header.html'?>
+    <div class="relative">
+        <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 
+        <h1 class="absolute z-10 tracking-wider text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold">Capteur zone singe</h1>
+    </div>
+
+    <div class="flex flex-row flex-wrap justify-center">
+        <div>
+            <h3>Température</h3>
+            <p>23 °C</p>
+        </div>
+        <div>
+            <h3>Humidité</h3>
+            <p>66 %</p>
+        </div>
+        <div>
+            <h3>Niveau sonore</h3>
+            <p>Elevé</p>
+        </div>
+        <div>
+            <h3>Luminosité</h3>
+            <p>Eclairage de jour</p>
+        </div>
     </div>
     
+
+
+    <?php include 'html/footer.html'?>
 </body>
 </html>
