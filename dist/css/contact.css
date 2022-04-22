@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    color: black;
+    background-color:#daeaf6;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+}
+
+.Titre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 90px;
+    justify-content: start;
+    margin-left: 4%;
+    margin-top: -2%;
+    
+}
+#corps{
+    display: flex;
+    flex-direction: column;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image{
+    height: 15em;
+    margin-left: 3%;
+
+}
+
+.bande{
+    display: flex;
+    background-color: #0D8ABC;
+    flex-direction: column;
+    font-size: 300%;
+}
+
+
