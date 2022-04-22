@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-        <h1 class="absolute">Capteur zone singe</h1>
+        <h1 class="absolute text-center text-2xl ml mt-10">Capteur zone singe</h1>
         <img class="w-full" src="/img/page_singe.jpg" alt="image d'un singe">
     </div>
     
