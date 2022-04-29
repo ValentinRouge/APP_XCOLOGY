@@ -30,7 +30,7 @@ main{
     margin-right: 10px;
     background-color: #daeaf8;
     border-radius: 10px;
-    filter: drop-shadow(0 0 50px rgba(36, 37, 37, 0.5));
+   
 }
 .faq_header{
     text-align: center;
@@ -43,7 +43,7 @@ main{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    filter: drop-shadow(0 0 50px rgba(36, 37, 37, 0.5));
+   
 }
 .Faq{
     margin-top: 20px;
@@ -63,8 +63,9 @@ main{
     left: 50%;
     margin-top: 150px;
 }
-.QandA{
+.question-answer{
     display:-webkit-flex;
+    flex-direction: column;
     border: transparent;
     margin-left: 50%;
     margin-right: 40px;
@@ -77,13 +78,13 @@ main{
     margin: 1.4rem 0rem;
     text-align: justify;
 }
-.button{
+.faq-button{
     font-size: 1.8rem;
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
 }
-.button:hover{
+.faq-button:hover{
     color: #0d8abc;
 }
 .up-icon{
@@ -94,51 +95,70 @@ main{
     font-size:1.2rem ;
     line-height: 1.5;
     text-align: justify;
-    display: none;    
+    display: none; 
 }
-.show-text.answer{
+.show-text .answer{
     display: block;
 }
-.show-text.up-icon{
+.show-text .up-icon{
     display: inline;
 }
-.show-text.down-icon{
-    display:none;
+.show-text .down-icon{
+    display: none;
 }
 
-@media screen and (max-width:800px){
-    .inside{
-        width: 750px;
-        height: 0;
+@media screen and (max-width:800px) {
+    body {
+        min-height: 100vh;
+        font-family: 'Poppins', sans-serif;
         display: flex;
+        justify-content: center;
     }
-    .img1{
+
+    .inside{
         position: relative;
-        width: 400px;
-        top: 88px;
-        display: flex;
-        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    
+       
+    }
+    main{
+        position: relative;
+        width: 520px;
+        margin-left:30px;
+        margin-right: 30px;
+        border-radius: 10px;
     }
     .faq_header{
         position: relative;
-        display: flex;
-        flex-direction: column;
-        
+        margin-left: 30px;
+        width: 400px;
+        margin-right: 30px;
     }
-    .QandA{
-        width: 380px;
-    }
-    .main_content{
-        margin-top: 85px;
-
-    }
-    .question{
-        margin-top: 50px;
-        font-size: 2rem;
+    .Faq{
+        margin-top: 20px;
+        font-size: 3rem;
+        text-align: center;
     }
     .img{
         display: none;
+    
     }
+    .img1{
+        display: none;
+    
+    }
+    .question-answer{
+       margin-left: 30px;
+       margin-right: 30px;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+   
+    }
+
+
 }
 
 
