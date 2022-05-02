@@ -28,11 +28,45 @@
             <a href="https://instagram.com/"><img id="insta" class="image" src="../img/insta_contact.png"></a>
             <a href="https://twitter.com/"><img id="twitter" class="image" src="../img/twitter_contact.jpg"></a><br>
         </div>
-    </div>
-    <div id="boite_floue">
-    
 
-       
+
+        <div class="formulaire">
+            <span class="Question">Nom</span>
+            <form method="post" action="traitement.php">
+                <p><input type="text" name="Nom" /></p>
+            </form>
+            <span class="Question">Prenom</span>
+            <form method="post" action="traitement.php">
+                <p><input type="text" name="Prenom" /></p>
+            </form>
+            <span class="Question">Mail</span>
+            <form method="post" action="traitement.php">
+                <p><input type="text" name="Mail" /></p>
+            </form>
+            <form method="post" action="traitement.php">
+                <span>
+                    <label for="ameliorer">Tapez votre message</label><br />
+                    <textarea name="ameliorer" id="ameliorer"></textarea>
+                </span>
+             </form>
+             <input type="submit" value="Envoyer" />
+             <input type="reset" value="Effacer" />
+         </div>
+
+
+        <div class = "horaires">
+
+            <div class="date">
+                <img id="calendrier" src="../img/Calendrier.png"/>
+                <span class="text"> mardi/mercredi/jeudi/vendredi/samedi - 9h-19h</span>
+            </div>
+
+            <div class="heure">
+                <img id="horloge" src="../img/horloge.png"/>
+                <span class="text"> lundi - 9h-12h </span>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>

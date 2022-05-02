@@ -41,4 +41,37 @@ body {
     font-size: 300%;
 }
 
+div.horaires{
+    display: flex;
+    flex-direction: column;
+}
+img#calendrier{
+    width: 240px;
+    margin-left: 3%;
+}
+img#horloge{
+    width: 240px;
+    margin-left: 3%;
+
+}
+span.text{
+    font-size: 90px;
+    margin-left: 3%;
+    justify-content: space-around;
+}
+textarea{
+    width: 2000px;
+    height: 400px;
+    font-size: 5rem;
+    letter-spacing: 1px;
+}
+
+#formulaire{
+    font-size: 300%;
+
+}
+span.Question{
+    font-size: 90px;
+
+}
 
