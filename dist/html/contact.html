@@ -9,72 +9,78 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="bande">
-        <h1 id="nous_contacter">Nous contacter</h1>
-        <h1 id="autres questions">Autres questions</h1>
-        <h1 id="infos pratiques">Infos pratiques</h1>
-    
-    </div>
-    <div class="corps">
-        <div class="Titre">
-            <p id="mail">Par mail: xcolozoo.lesbest@isep.fr</p>
-            <p id="tel">Par téléphone: 06.41.41.41.41 </p>
-            <p id="agence">Un agent vous répondra du mardi au vendredi de 9h à 17h </p>
-            <p id="reseaux">Sur nos réseaux:</p>
+    <corps> 
+        <div class="bande">
+            <h1 id="nous_contacter">Nous contacter</h1>
+            <h1 id="autres questions">Autres questions</h1>
+            <h1 id="infos pratiques">Infos pratiques</h1>
+        
         </div>
-    
-        <div class = "images">
-            <a href="https://www.facebook.com/"><img id="fb" class="image" src="../img/fb_contact.png"/></a>
-            <a href="https://instagram.com/"><img id="insta" class="image" src="../img/insta_contact.png"></a>
-            <a href="https://twitter.com/"><img id="twitter" class="image" src="../img/twitter_contact.jpg"></a><br>
-        </div>
-
-        <div class="formulaire">
-            <h4 id="autres questions">D'autres questions? Laissez nous un message!</h4>
-            <form method="Question" action="traitement.php">
-                <span>
-                    <label for="Question">Nom</label><br />
-                    <textarea name="Question" id="Question"></textarea>
-                </span>
-             </form>
-             <form method="Question" action="traitement.php">
-                <span>
-                    <label for="Question">Prenom</label><br />
-                    <textarea name="Question" id="Question"></textarea>
-                </span>
-             </form>
-             <form method="Mail" action="traitement.php">
-                <span>
-                    <label for="Mail">Mail</label><br />
-                    <textarea name="Mail" id="Mail"></textarea>
-                </span>
-             </form>
-            <form method="post" action="traitement.php">
-                <span>
-                    <label for="ameliorer">Tapez votre message</label><br />
-                    <textarea name="ameliorer" id="ameliorer"></textarea>
-                </span>
-             </form>
-
-             <input type="submit" value="Envoyer" />
-             <input type="reset" value="Effacer" />
-         </div>
-
-
-        <div class = "horaires">
-
-            <div class="date">
-                <img id="calendrier" src="../img/Calendrier.png"/>
-                <span class="text"> mardi/mercredi/jeudi/vendredi/samedi - 9h-19h</span>
+        <div class="corps">
+            <div class="Titre">
+                <p id="mail">Par mail: xcolozoo.lesbest@isep.fr</p>
+                <p id="tel">Par téléphone: 06.41.41.41.41 </p>
+                <p id="agence">Un agent vous répondra du mardi au vendredi de 9h à 17h </p>
+                <p id="reseaux">Sur nos réseaux:</p>
+            </div>
+        
+            <div class = "images">
+                <a href="https://www.facebook.com/"><img id="fb" class="image" src="../img/fb_contact.png"/></a>
+                <a href="https://instagram.com/"><img id="insta" class="image" src="../img/insta_contact.png"></a>
+                <a href="https://twitter.com/"><img id="twitter" class="image" src="../img/twitter_contact.jpg"></a><br>
             </div>
 
-            <div class="heure">
-                <img id="horloge" src="../img/horloge.png"/>
-                <span class="text"> lundi - 9h-12h </span>
+            <div class="formulaire">
+                <h4 id="autres questions">D'autres questions? Laissez nous un message!</h4>
+                <form method="Question" action="traitement.php">
+                    <span>
+                        <label for="Question">Nom</label><br />
+                        <textarea name="Question" id="Question"></textarea>
+                    </span>
+                </form>
+                <form method="Question" action="traitement.php">
+                    <span>
+                        <label for="Question">Prenom</label><br />
+                        <textarea name="Question" id="Question"></textarea>
+                    </span>
+                </form>
+                <form method="Mail" action="traitement.php">
+                    <span>
+                        <label for="Mail">Mail</label><br />
+                        <textarea name="Mail" id="Mail"></textarea>
+                    </span>
+                </form>
+                <form method="post" action="traitement.php">
+                    <span>
+                        <label for="ameliorer">Tapez votre message</label><br />
+                        <textarea name="ameliorer" id="ameliorer"></textarea>
+                    </span>
+                </form>
+
+                <input type="submit" value="Envoyer" style= " font-size : 0.5em"/>
+                <input type="reset" value="Effacer" style= " font-size : 0.5em"/>
             </div>
 
+
+            <div class = "horaires">
+
+                <div class="date">
+                    <img id="calendrier" src="../img/Calendrier.png"/>
+                    <span class="texte"> mardi/mercredi/jeudi/vendredi/samedi - 9h-19h</span>
+                </div>
+
+                <div class="heure">
+                    <img id="horloge" src="../img/horloge.png"/>
+                    <span class="texte"> lundi - 9h-12h </span>
+                </div>
+
+            </div>
+            <div class ="map">
+                <span class="carte">Retrouvez nous ici!</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5416.951070992753!2d1.343658577442602!3d47.24640381664941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fb58552d6f61ff%3A0x9cfdfb800cb359b!2sZooParc%20de%20Beauval!5e0!3m2!1sfr!2sfr!4v1651498084276!5m2!1sfr!2sfr" width="3000" height="2000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-    </div>
+    </corps>
 </body>
 </html>
 
