@@ -9,30 +9,37 @@
     <title>Capteur zone singe</title>
 </head>
 <body class="bg-XBlueLight">
-    <?php include 'html/header.html'?>
+    <?php include 'html/header.html';
+    include 'connectionToBDD.php'
+    ?>
     <div class="relative">
         <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 
         <h1 class="absolute z-10 tracking-wider text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold">Capteur zone singe</h1>
     </div>
 
     <div class="flex flex-row flex-wrap justify-center ">
-        <div class="flex flex-row flex-wrap justify-center border-4 border-XBlueStrong mt-2">
-            <div class="">
+        <div class="flex flex-row flex-wrap justify-center border-4 border-XBlueStrong mt-2 rounded-2xl text-center border-separate">
+            <div class="px-2 border-r-4 border-XBlueStrong">
                 <h3>Température</h3>
-                <p>23 °C</p>
+                <p class="text-4xl font-bold">
+                <?php
+                    $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 1 ORDER BY CD.date_time";
+                    $result = $connection->query($requet)
+                ?>
+                </p>
             </div>
-            <div class="">
+            <div class="px-2 border-r-4 border-XBlueStrong">
                 <h3>Humidité</h3>
-                <p>66 %</p>
+                <p class="text-4xl font-bold">66 %</p>
             </div>
-            <div class="">
+            <div class="px-2 border-r-4 border-XBlueStrong">
                 <h3>Niveau sonore</h3>
-                <p>Elevé</p>
+                <p class="text-4xl font-bold">Elevé</p>
             </div>
-            <div class="">
+            <div class="mx-2 ">
                 <h3>Luminosité</h3>
-                <p>Eclairage de jour</p>
-            </div>
+                <p class="text-4xl font-bold">Eclairage de jour</p>
+            </div>  
         </div>
         
     </div>
