@@ -29,26 +29,33 @@
             <a href="https://twitter.com/"><img id="twitter" class="image" src="../img/twitter_contact.jpg"></a><br>
         </div>
 
-
         <div class="formulaire">
-            <span class="Question">Nom</span>
-            <form method="post" action="traitement.php">
-                <p><input type="text" name="Nom" /></p>
-            </form>
-            <span class="Question">Prenom</span>
-            <form method="post" action="traitement.php">
-                <p><input type="text" name="Prenom" /></p>
-            </form>
-            <span class="Question">Mail</span>
-            <form method="post" action="traitement.php">
-                <p><input type="text" name="Mail" /></p>
-            </form>
+            <h4 id="autres questions">D'autres questions? Laissez nous un message!</h4>
+            <form method="Question" action="traitement.php">
+                <span>
+                    <label for="Question">Nom</label><br />
+                    <textarea name="Question" id="Question"></textarea>
+                </span>
+             </form>
+             <form method="Question" action="traitement.php">
+                <span>
+                    <label for="Question">Prenom</label><br />
+                    <textarea name="Question" id="Question"></textarea>
+                </span>
+             </form>
+             <form method="Mail" action="traitement.php">
+                <span>
+                    <label for="Mail">Mail</label><br />
+                    <textarea name="Mail" id="Mail"></textarea>
+                </span>
+             </form>
             <form method="post" action="traitement.php">
                 <span>
                     <label for="ameliorer">Tapez votre message</label><br />
                     <textarea name="ameliorer" id="ameliorer"></textarea>
                 </span>
              </form>
+
              <input type="submit" value="Envoyer" />
              <input type="reset" value="Effacer" />
          </div>
