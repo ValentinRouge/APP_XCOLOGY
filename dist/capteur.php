@@ -24,13 +24,22 @@
                 <p class="text-4xl font-bold">
                 <?php
                     $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 1 ORDER BY CD.date_time";
-                    $result = $connection->query($requet)
+                    $result = $connection->query($requet);
+                    $row = $result->fetch_assoc();
+                    echo $row['value']." ".$row['unité'];
                 ?>
                 </p>
             </div>
             <div class="px-2 border-r-4 border-XBlueStrong">
                 <h3>Humidité</h3>
-                <p class="text-4xl font-bold">66 %</p>
+                <p class="text-4xl font-bold">
+                <?php
+                    $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 2 ORDER BY CD.date_time";
+                    $result = $connection->query($requet);
+                    $row = $result->fetch_assoc();
+                    echo $row['value']." ".$row['unité'];
+                ?>
+                </p>
             </div>
             <div class="px-2 border-r-4 border-XBlueStrong">
                 <h3>Niveau sonore</h3>
