@@ -35,11 +35,25 @@
                     include 'connectionToBDD.php';
                     global $connection;
 
-                    $q = $connection->prepare("INSERT INTO Utilisateur(email,password) VALUES(:email,:password)");
-                    $q->execute([
+                    $c = $connection->prepare("SELECT email FROM Utilisateur WHERE email = :email");
+                    $c->execute([
+                        'email' => $email
+                    ]);
+
+                    $result = $c->rowCount();
+
+                    if($result ==0) {
+                        $q = $connection->prepare("INSERT INTO Utilisateur(email,password) VALUES(:email,:password)");
+                        $q->execute([
                         'email' => $email,
                         'password' => $hashpass
-                    ]);
+                        ]);
+                        echo "Le compte a été créé";
+                    }else{
+                        echo"Un email existe déjà";
+                    }
+                    
+
 
                 }
 
