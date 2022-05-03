@@ -32,7 +32,7 @@
     
                     $hashpass = password_hash($password, PASSWORD_BCRYPT, $options);
 
-                    include 'connectionToBDD.php'
+                    include 'connectionToBDD.php';
                     global $connection;
 
                     $q = $connection->prepare("INSERT INTO Utilisateur(email,password) VALUES(:email,:password)");
