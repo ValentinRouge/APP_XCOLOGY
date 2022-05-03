@@ -7,17 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #menu { color: #000000; } 
+        
+      </style>
 </head>
 <body>
     <corps> 
         <div class="bande">
-            <a href="#haut"><h1 id="nous_contacter">Nous contacter</h1></a>
-            <a href="#form"><h1 id="autres questions">Autres questions</h1></a>
-            <a href="#info"><h1 id="infos pratiques">Infos pratiques</h1></a>
+            <a href="#haut" style="text-decoration:none;">Nous contacter</a>
+            <b>    _   </b>
+            <a href="#form"style="text-decoration:none;">Autres questions</a>
+            <b>_       </b>
+            <a href="#info"style="text-decoration:none;">Infos pratiques</a>
         
         </div>
         <div class="bande2">
-        
+            
         </div>
         <div class="corps">
             <a name="haut"></a>
@@ -28,42 +34,35 @@
                 <p id="reseaux">Sur nos réseaux:</p>
             </div>
         
-            <div class = "images">
-                <a href="https://www.facebook.com/"><img id="fb" class="image" src="../img/fb_contact.png"/></a>
-                <a href="https://instagram.com/"><img id="insta" class="image" src="../img/insta_contact.png"></a>
-                <a href="https://twitter.com/"><img id="twitter" class="image" src="../img/twitter_contact.jpg"></a><br>
+            <div class = "logos">
+                <a href="https://www.facebook.com/"><img id="fb" class="logo" src="../img/fb_contact.png"/></a>
+                <a href="https://instagram.com/"><img id="insta" class="logo" src="../img/insta_contact.png"></a>
+                <a href="https://twitter.com/"><img id="twitter" class="logo" src="../img/twitter_contact.jpg"></a><br>
             </div>
 
             <div class="formulaire">
                 <a name="form"></a>
                 <h4 id="autres questions">D'autres questions? Laissez nous un message!</h4>
-                <form method="Question" action="traitement.php">
+                <form method="Question" action="../js/traitement.php">
                     <span>
-                        <label for="Question">Nom</label><br />
+                        <label for="Question">Nom</label><br/>
                         <textarea name="Question" id="Question"></textarea>
                     </span>
-                </form>
-                <form method="Question" action="traitement.php">
                     <span>
-                        <label for="Question">Prenom</label><br />
+                        <label for="Question"><br>Prenom</label><br/>
                         <textarea name="Question" id="Question"></textarea>
                     </span>
-                </form>
-                <form method="Mail" action="traitement.php">
                     <span>
-                        <label for="Mail">Mail</label><br />
+                        <label for="Mail"><br>Mail</label><br/>
                         <textarea name="Mail" id="Mail"></textarea>
                     </span>
-                </form>
-                <form method="post" action="traitement.php">
                     <span>
-                        <label for="ameliorer">Tapez votre message</label><br />
+                        <label for="ameliorer"><br>Tapez votre message</label><br/>
                         <textarea name="ameliorer" id="ameliorer"></textarea>
                     </span>
-                </form>
-
-                <input type="submit" value="Envoyer" style= " font-size : 0.5em"/>
-                <input type="reset" value="Effacer" style= " font-size : 0.5em"/>
+                    <br><input type="submit", value="Envoyer", style= " font-size : 0.5em"/>
+                <input type="reset", value="Effacer", style= " font-size : 0.5em"/><br/>
+            </form>
             </div>
 
 
