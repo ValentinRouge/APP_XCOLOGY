@@ -1,4 +1,4 @@
-body {
+corps {
     display: flex;
     color: black;
     background-color:#daeaf6;;
@@ -11,87 +11,147 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 90px;
+    font-size: 25px;
     justify-content: start;
-    margin-left: 4%;
-    margin-top: -2%;
-    
+    margin-left: 1%;
+    margin-top: -0.5%;
 }
 #corps{
     display: flex;
     flex-direction: column;
 }
 
-#images{
+.logos{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+
 }
 
-.image{
-    height: 15em;
+.logo{
+    height: 4.5em;
     margin-left: 3%;
-    margin-bottom: 9%;
+    margin-bottom: 1%;
 
 }
 
 .bande{
+    position: fixed;
     display: flex;
     background-color: #0D8ABC;
     flex-direction: column;
-    font-size: 300%;
+    font-size: 90%;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+.bande2{
+    display: flex;
+    background-color: #0D8ABC;
+    flex-direction: column;
+    font-size: 90%;
+    width: 21em;
 }
 
 div.horaires{
     display: flex;
     flex-direction: column;
+    margin-top: 2%;
 }
 img#calendrier{
-    width: 240px;
-    margin-left: 3%;
+    width: 80px;
+    margin-left: 1%;
+    vertical-align: middle;
 }
 img#horloge{
-    width: 240px;
-    margin-left: 3%;
+    width: 80px;
+    margin-left: 1%;
+    vertical-align: middle;
 
 }
 span.text{
     font-size: 90px;
     margin-left: 3%;
     justify-content: space-around;
+    font-family: arial, Helvetica, sans-serif;
+}
+span.texte{
+    font-size: 25px;
+    justify-content: center;
+    font-family: arial, Helvetica, sans-serif;
 }
 textarea#Question{
-    width: 800px;
-    height: 100px;
-    font-size: 5rem;
+    width: 400px;
+    height: 50px;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 textarea#Mail{
-    width: 2000px;
-    height: 100px;
-    font-size: 5rem;
+    width: 850px;
+    height: 50px;
+    font-size: 2rem;
     letter-spacing: 1px; 
 }
 textarea#ameliorer{
-    width: 2000px;
+    width: 1230px;
     height: 400px;
-    font-size: 5rem;
+    font-size: 1.5rem;
     letter-spacing: 1px; 
 }
 input{
     width: 300px;
-    height: 75px
+    height: 75px;
+    font-size:x-large;
 
 }
 
 
 
 .formulaire{
-    margin-left: 3%;
-    font-size: 90px;
+    font-size: 30px;
+    margin-left: 1%;
+    font-family: arial, Helvetica, sans-serif;
 }
 span.Question{
-    font-size: 90px;
+    font-size: 40px;
 
 }
 
+.map{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    justify-content: center;
+    
+}
+span.carte{
+    font-size: 55px;
+    margin-bottom: 2%;  
+    font-family: arial, Helvetica, sans-serif;
+}
+.heure{
+    vertical-align: middle;
+}
+.date{
+    vertical-align: middle;
+}
+
+.bande a:hover{
+    color: red;
+    background-color: #0d475d;
+}
+
+.bande a{
+    font-family: arial, Helvetica, sans-serif;
+
+    font-size: 2em;
+    color: black;
+}
+
+.bande b{
+    font-family: arial, Helvetica, sans-serif;
+
+    font-size: 2em;
+    color:#0D8ABC;
+
+}

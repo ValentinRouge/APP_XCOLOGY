@@ -1,0 +1,12 @@
+body{
+    background-color: #daeaf6;
+    
+    margin: 0 auto;
+}   
+
+/* tete de page */
+
+h1{
+    width: 100%;
+    font-weight:bold;
+}
