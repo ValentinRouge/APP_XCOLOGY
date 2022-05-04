@@ -7,18 +7,28 @@
     <!-- css -->
 </head>
 <body>
+
     <?php 
     include 'html/header.html' ; 
     include 'html/footer.html' ; 
     ?>
 
-    <form method="post">
-        <input type="email" name="email" id="email" placeholder="Votre email" required><br/>
-        <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
-        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmez votre mot de passe" required><br/>
-        <input type="submit" name="envoie" id="envoie" value="Confirmer">
-    </form>
-    
+    <center>
+    <fieldset>
+        
+        <form method="post">
+            <h1>Inscrivez-Vous !</h1>
+            <hr>
+            <table>
+            <input type="email" name="email" id="email" placeholder="Votre email" required><br/>
+            <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirmez votre mot de passe" required><br/>
+            <input type="submit" name="envoie" id="envoie" value="S'inscrire">
+            </table>
+        </form>
+        
+    </fieldset>
+    </center>
     <?php
         
         if(isset($_POST['envoie'])) {
