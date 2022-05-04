@@ -2,6 +2,9 @@
 <html>
 <head>
     <title></title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/Inscription.css">
+    <!-- css -->
 </head>
 <body>
     <?php 
