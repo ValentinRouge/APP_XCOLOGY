@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Inscription</title>
     <!-- css -->
     <link rel="stylesheet" href="css/Inscription.css">
     <!-- css -->
@@ -10,7 +10,7 @@
 
     <?php 
     include 'html/header.html' ; 
-    include 'html/footer.html' ; 
+    include 'html/Footer.html' ; 
     ?>
 
     <center>
@@ -20,15 +20,16 @@
             <h1>Inscrivez-Vous !</h1>
             <hr>
             <table>
-            <input type="email" name="email" id="email" placeholder="Votre email" required><br/>
-            <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
-            <input type="password" name="cpassword" id="cpassword" placeholder="Confirmez votre mot de passe" required><br/>
-            <input type="submit" name="envoie" id="envoie" value="S'inscrire">
+                <input type="email" name="email" id="email" placeholder="Votre email" required><br/>
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirmez votre mot de passe" required><br/>
+                <input type="submit" name="envoie" id="envoie" value="S'inscrire">
             </table>
         </form>
         
     </fieldset>
     </center>
+    
     <?php
         
         if(isset($_POST['envoie'])) {
@@ -48,7 +49,7 @@
                     include 'connectionToBDD.php';
                     global $connection;
 
-                    $c = $connection->prepare("SELECT email FROM Utilisateur WHERE email = :email");
+                    $c = $connection->prepare("SELECT email FROM User WHERE email = :email");
                     $c->execute([
                         'email' => $email
                     ]);
@@ -56,14 +57,17 @@
                     $result = $c->rowCount();
 
                     if($result ==0) {
-                        $q = $connection->prepare("INSERT INTO Utilisateur(email,password) VALUES(:email,:password)");
+                        $q = $connection->prepare("INSERT INTO User(email,password) VALUES(:email,:password)");
                         $q->execute([
                         'email' => $email,
                         'password' => $hashpass
                         ]);
                         echo "Le compte a été créé";
+
+                        header('Location:index.php')
                     }else{
                         echo"Un email existe déjà";
+                        header('Location:index.php')
                     }
                     
 
