@@ -37,7 +37,7 @@
 
             if(!empty($lemail) && !empty($lpassword))
             {
-                $q = $connexion->prepare("SELECT * FROM User WHERE email = :email");
+                $q = $connexion->prepare("SELECT * FROM User WHERE 'email' = '$email'");
                 $q->execute(['email' => $lemail]);
                 $result = $q->fetch();
 
@@ -57,7 +57,7 @@
                     }
                     else 
                     {
-                        echo "Le mot de passe n'est pas correcte"
+                        echo "Le mot de passe n'est pas correcte";
 
                         header('Location:connexion.php');
                     }

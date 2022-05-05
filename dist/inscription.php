@@ -49,7 +49,7 @@
                     include 'connectionToBDD.php';
                     global $connection;
 
-                    $c = $connection->prepare("SELECT email FROM User WHERE email = :email");
+                    $c = $connection->prepare("SELECT email FROM User WHERE 'email' = '$email'");
                     $c->execute([
                         'email' => $email
                     ]);
@@ -57,7 +57,7 @@
                     $result = $c->rowCount();
 
                     if($result ==0) {
-                        $q = $connection->prepare("INSERT INTO User(email,password) VALUES(:email,:password)");
+                        $q = $connection->prepare("INSERT INTO User(email,password) VALUES($email,$password)");
                         $q->execute([
                         'email' => $email,
                         'password' => $hashpass
