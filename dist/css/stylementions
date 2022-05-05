@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+h1 {
+    color: #4C2A29;
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+}
+
+h3 {
+    color: #0D8ABC;
+    font-family: 'Rammetto One', cursive;
+    text-align: justify;
+    text-align: center;
+}
+
+h4 {
+    color: #DAEAF6;
+    font-family: 'Rammetto One', cursive;
+    text-indent: 20px;
+    text-align: center;
+}
+
+h5 {
+    color: #DAE1F6;
+    font-family: 'Rammetto One', cursive;
+    text-indent: 20px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body {
+    background: #FF008E;
+}
+
+.Mentions {
+    background-color: rgb(255, 247, 234);
+}
