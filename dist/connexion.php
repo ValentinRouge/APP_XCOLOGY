@@ -8,7 +8,6 @@
 <body>
     <?php 
         include 'html/header.html';
-        include 'html/Footer.html';
         include 'connectionToBDD.php';
         global $connexion;
     ?>
@@ -30,6 +29,8 @@
     </center>
 
     <?php
+
+        include 'html/Footer.html';
 
         if(isset($_POST['formlogin']))
         {

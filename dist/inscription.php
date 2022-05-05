@@ -10,7 +10,6 @@
 
     <?php 
     include 'html/header.html' ; 
-    include 'html/Footer.html' ; 
     ?>
 
     <center>
@@ -31,6 +30,8 @@
     </center>
 
     <?php
+
+        include 'html/Footer.html';
         
         if(isset($_POST['envoie'])) {
 
