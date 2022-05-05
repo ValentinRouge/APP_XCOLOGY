@@ -76,6 +76,22 @@
                     </p>
                 </div>  
             </div>
+            <div class="flex flex-row items-center">
+                <p class="mt-4 text-light px-4">
+                    Un grand nombre de singes vivent dans les forêts : ils sont arboricoles, c’est-à-dire qu'ils savent grimper et y vivre, dans les arbres. On pense que les premiers singes, nos ancêtres à tous, étaient probablement arboricoles. Par la suite, le groupe s'est diversifié et de nombreux singes se sont adaptés à de nouveaux milieux très différents.
+                    <br>
+                    Les singes utilisent généralement leurs mains (ainsi que leurs pieds, qui, contrairement à celui de l'homme, ont souvent aussi un pouce opposable), pour attraper les branches et s'y accrocher. Cela permet aux singes de se déplacer dans les arbres sans tomber. Un grand nombre d'espèces de singes sont assez petits. En cas de danger, ils se réfugient dans les arbres, sur les plus hautes branches, où leurs prédateurs, plus gros et plus lourds, ne peuvent pas venir les chercher.
+                    <br>
+                    Certains singes sont tout particulièrement adaptés à la vie dans les arbres et n'en descendent que rarement, voire jamais. Les singes-araignée ont de longs bras, mais aussi une queue qui est capable de s'enrouler autour d'une branche et de s'y accrocher. C'est presque comme une « cinquième main », grâce à laquelle le singe ne tombe jamais ! Il peut ainsi rester suspendu par la queue, pendant qu'il utilise ses mains pour se nourrir, par exemple. Les gibbons, eux, n'ont pas de queue, mais des bras gigantesques, capables de grands mouvements. Ces singes ne marchent quasiment jamais : ils se déplacent en se balançant de branches en branches, suspendus par leurs bras et « volent » littéralement d'arbre en arbre.
+                    <br>
+                    D'autres singes plus grands, comme les babouins, vivent plutôt à terre, notamment dans la savane. C'est, notamment, le cas de l'homme, un des rares singes à avoir des jambes plus longues que les bras. Les singes sont capables de coloniser les milieux les plus divers : les géladas, par exemple, vivent sur les hauts plateaux, au sommet des montagnes d'Éthiopie, au bord de très hautes falaises, qui les protègent des prédateurs. Les macaques japonais vivent dans les montagnes et profitent l'hiver des sources chaudes pour se baigner et se réchauffer.
+                    <br>
+                    L'homme, enfin, est le seul singe qui se construise un environnement à lui : il bâtit des villes, où il va vivre. D'autres singes se sont d'ailleurs adaptés à la vie en ville, au côté des humains, comme certains macaques, notamment en Asie.
+                </p>
+
+                <img class="max-h-96" src="img/capteur-singe.jpeg" alt="un singe dans les arbres">
+            </div>
+
             
         </div>
         
