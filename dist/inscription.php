@@ -29,14 +29,14 @@
         
     </fieldset>
     </center>
-    
+
     <?php
         
         if(isset($_POST['envoie'])) {
 
             extract($_POST);
 
-            if (!empty $password) && !empty($cpassword) && !empty($email)) {
+            if (!empty ($password) && !empty($cpassword) && !empty($email)) {
                 
                 if($password == $cpassword) {
                    
@@ -64,10 +64,10 @@
                         ]);
                         echo "Le compte a été créé";
 
-                        header('Location:index.php')
+                        header('Location:index.php');
                     }else{
                         echo"Un email existe déjà";
-                        header('Location:index.php')
+                        header('Location:index.php');
                     }
                     
 
