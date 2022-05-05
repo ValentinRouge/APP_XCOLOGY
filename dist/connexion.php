@@ -9,7 +9,7 @@
     <?php 
         include 'html/header.html';
         include 'connectionToBDD.php';
-        global $connexion;
+        global $connection;
     ?>
 
     <center>
@@ -38,7 +38,7 @@
 
             if(!empty($lemail) && !empty($lpassword))
             {
-                $q = $connexion->prepare("SELECT * FROM User WHERE 'email' = :email");
+                $q = $connection->prepare("SELECT * FROM User WHERE 'email' = :email");
                 $q->execute(['email' => $lemail]);
                 $result = $q->fetch();
 
