@@ -30,7 +30,7 @@
 
     <?php
 
-        include 'html/Footer.html';
+        include 'html/footer.html';
 
         if(isset($_POST['formlogin']))
         {
