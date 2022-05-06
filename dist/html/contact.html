@@ -43,25 +43,25 @@
             <div class="formulaire">
                 <a name="form"></a>
                 <h4 id="autres questions">D'autres questions? Laissez nous un message!</h4>
-                <form method="Question" action="../js/traitement.php">
+                <form method="post" action="../js/traitement.php">
                     <span>
-                        <label for="Question">Nom</label><br/>
-                        <textarea name="Question" id="Question"></textarea>
+                        <label for="Question"><br/>
+                        <textarea name="Nom" id="Question" placeholder="Nom" maxlength="47"></textarea>
                     </span>
                     <span>
-                        <label for="Question"><br>Prenom</label><br/>
-                        <textarea name="Question" id="Question"></textarea>
+                        <label for="Question"><br/>
+                        <textarea name="Prenom" id="Question" placeholder="Prénom" maxlength="50"></textarea>
                     </span>
                     <span>
-                        <label for="Mail"><br>Mail</label><br/>
-                        <textarea name="Mail" id="Mail"></textarea>
+                        <label for="Mail"><br/>
+                        <textarea name="Mail" id="Mail" placeholder="Mail" maxlength="100"></textarea>
                     </span>
                     <span>
-                        <label for="ameliorer"><br>Tapez votre message</label><br/>
-                        <textarea name="ameliorer" id="ameliorer"></textarea>
+                        <label for="ameliorer"><br/>
+                        <textarea name="ameliorer" id="ameliorer" placeholder="Tapez votre message" maxlength="2000"></textarea>
                     </span>
                     <br><input type="submit", value="Envoyer", style= " font-size : 0.5em"/>
-                <input type="reset", value="Effacer", style= " font-size : 0.5em"/><br/>
+                <input type="reset", value="Effacer", style= " font-size : 0.5em" /><br/>
             </form>
             </div>
 
