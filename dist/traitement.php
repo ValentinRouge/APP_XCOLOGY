@@ -7,21 +7,20 @@
 </head>
 
     <body>
-        <?php
-         if(isset($_POST['mailform']))
 
-         $header="MIME-Version: 1.0\r\n";
-         $header.='From:"guillaume.legeai@gmail.com"<guillaume.legeai@gmail.com>'."\n";
-         $header.='Content-Type:text/html; charset="uft-8"'."\n";
-         $header.='Content-Transfer-Encoding: 8bit';
-         
-         $message='J\'ai envoyé ce mail avec PHP ';
-         
-         mail("guillaume.legeai@gmail.com", "retour xcolozoo!", $message, $header);
-         }
+    <!-- Inserer le html ici-->
+        <?php
+        if(isset($_POST["message"])){
+            $message = "Ce message vous a été envoyé via la page contact du sute Xcolozoo
+            Nom : " . $_POST["Nom"] . "
+            Email : " . $_POST["Prenom"] . "
+            Message : " $_POST["ameliorer"] . "
+            $retour = mail("guillaume.legeai@gmail.com","retour Xcolozoo",$ameliorer,"From: contact.xcolozoo@garageisep.com\r\nReply-to:" . $POST["Mail"]);
+            if($retour) {
+                echo "<p> L'email a bien été envoyé.<p>"
+            }
+        }
          ?>
-         <form method="POST" action="">
-             <input type="submit" value="Recevoir un mail !" name="mailform"/>
-         </form>
+      
     </body>
 </html>

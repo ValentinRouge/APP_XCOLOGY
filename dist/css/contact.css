@@ -150,8 +150,12 @@ span.carte{
 
 .bande b{
     font-family: arial, Helvetica, sans-serif;
-
     font-size: 2em;
     color:#0D8ABC;
 
+}
+input{
+    background-color: darkgray;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
 }
