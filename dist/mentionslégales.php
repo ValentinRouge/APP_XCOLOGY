@@ -1,7 +1,6 @@
-<?php include 'mentionslégales.php';
-?>
+<?php include 'html/header.html'; ?>
 <style>
-    <?php include '../css/stylementions.css'; ?>
+    <?php include './css/stylementions.css'; ?>
 </style>
 
 <div class="Mentions">
@@ -177,3 +176,4 @@
 
 </div>
 </body>
+<?php include 'html/footer.html'; ?>
