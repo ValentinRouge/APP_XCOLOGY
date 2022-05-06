@@ -7,7 +7,7 @@ body {
 fieldset {
     margin-top: 70px;
     width: 27%;
-    background-color: #0d8abc;
+    background-color: rgb(59, 130, 246);
     box-shadow: 5px 5px 20px 1px 10px rgb(85, 85, 85);
     border: 0px;
     padding-left: 10px;
