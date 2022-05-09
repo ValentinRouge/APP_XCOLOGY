@@ -4,7 +4,7 @@ corps {
     background-color:#daeaf6;;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .Titre{
@@ -13,6 +13,7 @@ corps {
     flex-direction: column;
     font-size: 25px;
     justify-content: start;
+   
     margin-left: 1%;
     margin-top: -0.5%;
 }
@@ -24,7 +25,7 @@ corps {
 .logos{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: left
 
 }
 
@@ -36,17 +37,20 @@ corps {
 }
 
 .bande{
-    position: fixed;
+
     display: flex;
-    background-color: #0D8ABC;
-    flex-direction: column;
-    font-size: 90%;
+    background-color: #82bcd3;
+    flex-direction: row;
+    font-size: 120%;
     font-family: 'Times New Roman', Times, serif;
+    height: 4em;
+    justify-content: space-around;
+    
   
 }
 .bande2{
     display: flex;
-    background-color: #0D8ABC;
+    background-color: #82bcd3;
     flex-direction: column;
     font-size: 90%;
     width: 21em;
@@ -120,7 +124,7 @@ span.Question{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
+    margin-left: 30%;
     justify-content: center;
     
 }
@@ -128,6 +132,7 @@ span.carte{
     font-size: 55px;
     margin-bottom: 2%;  
     font-family: arial, Helvetica, sans-serif;
+    margin-left: 8%;
 }
 .heure{
     vertical-align: middle;
@@ -136,9 +141,15 @@ span.carte{
     vertical-align: middle;
 }
 
+.contact-direct{
+    display: flex;
+    flex-direction: row;
+}
+
 .bande a:hover{
-    color: red;
-    background-color: #0d475d;
+    border-radius: 5px;
+    color: white;
+    background-color: #0a3444;
 }
 
 .bande a{
@@ -158,4 +169,16 @@ input{
     background-color: darkgray;
     border:1px solid #F5C5C5;
     border-radius:5px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    #corps{ 
+        display: flex;
+        flex-direction: row;
+    }
+    .bande{
+        display: row;
+    }
 }
