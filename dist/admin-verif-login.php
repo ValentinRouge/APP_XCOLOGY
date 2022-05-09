@@ -12,16 +12,16 @@ if(isset($_POST['username']) && isset($_POST['password']))
     
     if($username !== "" && $password !== "")
     {
-        $requete = "SELECT count(*) FROM User where 
-              email = '".$username."' AND password = '".$password."' AND admin = '1' ";
+        $requete = "SELECT User_id, admin FROM User where 
+              email = '".$username."' AND password = '".$password."' ";
         $exec_requete = mysqli_query($connection,$requete);
-        $reponse      = mysqli_fetch_array($exec_requete);
-        $count = $reponse['count(*)'];
-        if($count!=0) // nom d'utilisateur et mot de passe correctes
+        $count = mysqli_num_rows($exec_requete);
+        if($count==1) // nom d'utilisateur et mot de passe correctes
         {
-           $_SESSION['username'] = $username;
-           $_SESSION['admin'] = 1;
-           header('Location: admin-panel.php');
+            $reponse      = mysqli_fetch_array($exec_requete);
+            $_SESSION['username'] = $reponse['User_id'];;
+            $_SESSION['admin'] = $reponse['admin'];
+            header('Location: admin-panel.php');
         }
         else
         {
