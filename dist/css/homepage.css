@@ -14,9 +14,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    min-height: 100vh;
-
-
 }   
 
 
@@ -67,14 +64,14 @@ h1 {
 }
 
 h1 span {
-    position: absolute;
+    position: relative;
     font-size: 60px;
 
 }
 
 .container-btn {
-    position: relative;
-    top: 500px;
+    position: absolute;
+    top: 445px;
     z-index: 10;
     padding-left: 60px;
 
