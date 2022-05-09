@@ -124,6 +124,7 @@ h1 span {
     border-radius: 50%;
     border-top: 4px solid #7a4c08;
     animation: animate 4s linear infinite;
+    z-index: 20;
 
 }
 
@@ -142,6 +143,7 @@ h1 span {
 .container2 .ring:nth-child(3) {
     position: absolute;
     top: -66.66px;
+    z-index: 20;
 
 }
 
@@ -159,6 +161,7 @@ h1 span {
     0 0 0 20px #7a4c0811,
     0 0 20px #7a4c08,
     0 0 50px #7a4c08;
+    z-index: 20;
 
 
 
