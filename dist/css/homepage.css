@@ -8,7 +8,6 @@
 }
 
 body{
-    background-color: #111;
     height: 100vh;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -71,7 +70,7 @@ h1 span {
 
 .container-btn {
     position: absolute;
-    top: 350px;
+    top: 445px;
     z-index: 10;
     padding-left: 60px;
 
