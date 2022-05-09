@@ -54,7 +54,7 @@ body{
 
 /*dynamique*/
 .container1 {
-    position: relative;
+    position: absolute;
 
 }
 
@@ -67,14 +67,14 @@ h1 {
 }
 
 h1 span {
-    position: relative;
+    position: absolute;
     font-size: 60px;
 
 }
 
 .container-btn {
     position: relative;
-    top: 285px;
+    top: 500px;
     z-index: 10;
     padding-left: 60px;
 
