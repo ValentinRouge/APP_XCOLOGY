@@ -17,12 +17,18 @@
                 <h1>Connexion</h1>
                 <hr>
                 <table>
-                    <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required><br/>
+                    <input type="email" placeholder="Entrer le nom d'utilisateur" name="username" required><br/>
                     <input type="password" placeholder="Entrer le mot de passe" name="password" required><br/>
                     <input type="submit" name="formlogin" id="formlogin" value="Se connecter">
                 </table>        
             </form>
-
+            <?php
+                if(isset($_GET['erreur'])){
+                        $err = $_GET['erreur'];
+                        if($err==1 || $err==2)
+                            echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                    }
+            ?>
         </fieldset>
     </center>
 
