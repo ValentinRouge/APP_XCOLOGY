@@ -10,6 +10,11 @@
                 echo $_SESSION['username'] 
             ?> 
         </div>
+        <div id="SESSIONID" class="hidden"> 
+            <?php session_start();
+                echo $_SESSION['username'] 
+            ?> 
+        </div>
 
         <title>Capteur zone singe</title>
     </head>

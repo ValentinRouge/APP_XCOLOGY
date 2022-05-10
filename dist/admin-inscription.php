@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2']) && isset($_POST['pseudo']))
 {
     include 'connectionToBDD.php';
-    
+
     $username = mysqli_real_escape_string($connection,htmlspecialchars($_POST['username'])); 
     $password = mysqli_real_escape_string($connection,htmlspecialchars($_POST['password']));
     $password2 = mysqli_real_escape_string($connection,htmlspecialchars($_POST['password2']));
@@ -16,6 +16,7 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['passw
         if ($exec_requete){
             $_SESSION['username'] = $pseudo;
             $_SESSION['admin'] = 0;
+            $_SESSION['connected'] = 1;
             header('Location: admin-panel.php');
         } else {
             header('Location: inscription.php');

@@ -21,6 +21,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
             $reponse = mysqli_fetch_array($exec_requete);
             $_SESSION['username'] = $reponse['User_id'];;
             $_SESSION['admin'] = $reponse['admin'];
+            $_SESSION['connected'] = 1;
             header('Location: admin-panel.php');
         }
         else
