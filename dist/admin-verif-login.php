@@ -18,7 +18,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         $count = mysqli_num_rows($exec_requete);
         if($count==1) // nom d'utilisateur et mot de passe correctes
         {
-            $reponse      = mysqli_fetch_array($exec_requete);
+            $reponse = mysqli_fetch_array($exec_requete);
             $_SESSION['username'] = $reponse['User_id'];;
             $_SESSION['admin'] = $reponse['admin'];
             header('Location: admin-panel.php');

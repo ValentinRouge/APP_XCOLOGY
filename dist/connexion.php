@@ -8,73 +8,26 @@
 <body>
     <?php 
         include 'html/header.html';
-        include 'connectionToBDD.php';
-        global $connection;
     ?>
 
     <center>
-    <fieldset>
-        
-        <form method="post">
-            <h1>Connexion</h1>
-            <hr>
-            <table>
-                <input type="email" name="lemail" id="lemail" placeholder="Votre email" required><br/>
-                <input type="password" name="lpassword" id="lpassword" placeholder="Votre mot de passe" required><br/>
-                <input type="submit" name="formlogin" id="formlogin" value="Se connecter">
-            </table>        
-        </form>
+        <fieldset>
+            
+            <form action="admin-verif-login.php" method="POST">
+                <h1>Connexion</h1>
+                <hr>
+                <table>
+                    <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required><br/>
+                    <input type="password" placeholder="Entrer le mot de passe" name="password" required><br/>
+                    <input type="submit" name="formlogin" id="formlogin" value="Se connecter">
+                </table>        
+            </form>
 
-    </fieldset>
+        </fieldset>
     </center>
 
     <?php
-
         include 'html/footer.html';
-
-        if(isset($_POST['formlogin']))
-        {
-            extract($_POST);
-
-            if(!empty($lemail) && !empty($lpassword))
-            {
-                $q = $connection->prepare("SELECT * FROM User WHERE 'email' = :email");
-                $q->execute(['email' => $lemail]);
-                $result = $q->fetch();
-
-                if ($result == true)
-                {
-                    //le compte existe 
-                    $hashpassword = $result['password'];
-                    if(password_verify($lpassword, $hashpassword))
-                    {
-                        echo "Le mot de passe est bon, connexion en cours ";
-
-                        header('Location:capteur.php');
-
-                        $_SESSION['email'] = $result['email'];
-                        $_SESSION['date'] = $result['date'];
-
-                    }
-                    else 
-                    {
-                        echo "Le mot de passe n'est pas correcte";
-
-                        header('Location:connexion.php');
-                    }
-                }
-                else
-                {
-                    echo"Le compte portant l'email " . $lemail ."'existe pas";
-                }
-            }
-
-
-            else{
-                echo "Veuillez complétez l'ensemble des champs";
-            }
-        }
-
     ?>
 </body>
 
