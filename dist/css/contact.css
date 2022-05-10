@@ -31,30 +31,12 @@ corps {
 
 .logo{
     height: 4.5em;
-    margin-left: 3%;
+    margin-left: 25%;
     margin-bottom: 1%;
 
 }
 
-.bande{
 
-    display: flex;
-    background-color: #82bcd3;
-    flex-direction: row;
-    font-size: 120%;
-    font-family: 'Times New Roman', Times, serif;
-    height: 4em;
-    justify-content: space-around;
-    
-  
-}
-.bande2{
-    display: flex;
-    background-color: #82bcd3;
-    flex-direction: column;
-    font-size: 90%;
-    width: 21em;
-}
 
 div.horaires{
     display: flex;
@@ -79,7 +61,7 @@ span.text{
     font-family: arial, Helvetica, sans-serif;
 }
 span.texte{
-    font-size: 25px;
+    font-size: 23px;
     justify-content: center;
     font-family: arial, Helvetica, sans-serif;
 }
@@ -111,6 +93,7 @@ input{
 
 
 .formulaire{
+    margin-top: -1em;
     font-size: 30px;
     margin-left: 1%;
     font-family: arial, Helvetica, sans-serif;
@@ -124,15 +107,15 @@ span.Question{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
-    justify-content: center;
+    margin-left: 10%;
+    justify-content: center ;
     
 }
 span.carte{
     font-size: 55px;
     margin-bottom: 2%;  
     font-family: arial, Helvetica, sans-serif;
-    margin-left: 8%;
+    margin-left: 20%;
 }
 .heure{
     vertical-align: middle;
@@ -169,6 +152,13 @@ input{
     background-color: darkgray;
     border:1px solid #F5C5C5;
     border-radius:5px;
+}
+
+
+
+.info-direct{
+    display: flex;
+    flex-direction: row;
 }
 
 
