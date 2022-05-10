@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/output.css">
+        <div id="SESSIONID" class="hidden"> 
+            <?php session_start();
+                echo $_SESSION['username'] 
+            ?> 
+        </div>
 
         <title>Capteur zone singe</title>
     </head>
@@ -28,6 +33,7 @@
                         $row = $result->fetch_assoc();
                         echo $row['value']." ".$row['unité'];
                     ?>
+                    <script src="./js/capteur.js"></script>
                     </p>
                 </div>
                 <div class="px-2 border-r-4 border-XBlueStrong">
