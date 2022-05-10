@@ -21,6 +21,11 @@ corps {
     display: flex;
     flex-direction: column;
 }
+#autres-questions{
+    margin-left: 3em;
+    color: #daeaf6;
+
+}
 
 .logos{
     display: flex;
@@ -70,33 +75,39 @@ textarea#Question{
     height: 50px;
     font-size: 2rem;
     letter-spacing: 1px;
+    margin-left: 0.73em;
+    border-radius: 5%;
 }
 textarea#Mail{
     width: 850px;
     height: 50px;
     font-size: 2rem;
     letter-spacing: 1px; 
+    margin-left: 0.73em;
+    border-radius: 5%;
+
 }
 textarea#ameliorer{
-    width: 1230px;
+    width: 850px;
     height: 400px;
     font-size: 1.5rem;
     letter-spacing: 1px; 
-}
-input{
-    width: 300px;
-    height: 75px;
-    font-size:x-large;
-
+    margin-left: 1em;
+    border-radius: 5%;
 }
 
 
 
 .formulaire{
-    margin-top: -1em;
+    margin-top: 1em;
     font-size: 30px;
-    margin-left: 1%;
+    margin-left: 15%;
     font-family: arial, Helvetica, sans-serif;
+    background-color: #124E96;
+    border-radius: 15%;
+    width: 900px;
+    height: 1000px;
+    justify-content: center;
 }
 span.Question{
     font-size: 40px;
@@ -149,16 +160,23 @@ span.carte{
 
 }
 input{
-    background-color: darkgray;
-    border:1px solid #F5C5C5;
+    background-color: rgb(98, 200, 247);
+    border:1px solid #000000;
     border-radius:5px;
+    width: 300px;
+    height: 75px;
+    font-size:x-large;
+    margin-left: 5em;µ
 }
+
+
 
 
 
 .info-direct{
     display: flex;
     flex-direction: row;
+
 }
 
 
