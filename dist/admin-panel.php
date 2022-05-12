@@ -9,6 +9,12 @@
             <!-- tester si l'utilisateur est connecté -->
             <?php
                 session_start();
+                if (isset($_SESSION['username'])){
+                    echo "connecté";
+                } else {
+                    echo 'non connexté';
+                }
+
                 if($_SESSION['username'] !== ""){
                     $user = $_SESSION['username'];
                     // afficher un message

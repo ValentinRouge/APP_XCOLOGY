@@ -1,6 +1,6 @@
-function GetUserName(){
-
-    var username = document.getElementById("SESSIONID").innerHTML;
-    alert(username );
+var connected = document.getElementById("SESSION_CONNECTED").innerHTML;
+console.log(connected)
+if (connected == 0){
+    var datas = document.getElementById("datas");
+    datas.classList.add("hidden");
 }
-GetUserName()

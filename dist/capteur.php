@@ -5,14 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/output.css">
-        <div id="SESSIONID" class="hidden"> 
+        <div id="SESSION_CONNECTED" class="hidden"> 
             <?php session_start();
-                echo $_SESSION['username'] 
-            ?> 
-        </div>
-        <div id="SESSIONID" class="hidden"> 
-            <?php session_start();
-                echo $_SESSION['username'] 
+                if (isset($_SESSION['username'])){
+                    echo '1';
+                } else {
+                    echo '0';
+                }
             ?> 
         </div>
 
@@ -28,7 +27,7 @@
         </div>
 
         <div class="flex flex-row flex-wrap justify-center ">
-            <div class="flex flex-row flex-wrap justify-center border-4 border-XBlueStrong mt-2 rounded-2xl text-center border-separate">
+            <div class="flex flex-row flex-wrap justify-center border-4 border-XBlueStrong mt-2 rounded-2xl text-center border-separate" id="datas">
                 <div class="px-2 border-r-4 border-XBlueStrong">
                     <h3>Température</h3>
                     <p class="text-4xl font-bold">
@@ -87,6 +86,9 @@
                     </p>
                 </div>  
             </div>
+
+            <p class="justify-center text-3xl text-XBlueStrong mt-3 font-bold">Veuillez vous connecter pour voir les données</p>
+
             <div class="flex flex-row items-center">
                 <p class="mt-4 text-light px-4">
                     Un grand nombre de singes vivent dans les forêts : ils sont arboricoles, c’est-à-dire qu'ils savent grimper et y vivre, dans les arbres. On pense que les premiers singes, nos ancêtres à tous, étaient probablement arboricoles. Par la suite, le groupe s'est diversifié et de nombreux singes se sont adaptés à de nouveaux milieux très différents.
