@@ -24,77 +24,36 @@
 			<img src="../img/faq3.PNG" width="90px" height="90px" class="img" >
 		</div>
 		<main>
-		<img src="./img/faq1.PNG" alt="faq"class="img1">
-			<div class="main_content">
-				<div class="question-answer">
-        			<div class="question"> 
-         				<h2 class="question">
-                        <?php
-                            include 'connectionToBDD.php';
-                            $requet = "SELECT question FROM FAQ";
-                            $result = $connection->query($requet);
-                            $row = $result->fetch_assoc();
-                            echo $row['question'];
-                        ?>  
-                        </h2>
-         				<button class="faq-button">
-          					<span class="up-icon">
-           						<i class="fa-solid fa-chevron-up"></i>
-          					</span>
-          					<span class="down-icon">
-           						<i class="fa-solid fa-chevron-down"></i>
-          					</span>
-         				</button> 
-        			</div>
-        			<div class="answer">
-         				<p class="answer">
-                        <?php
-                            include 'connectionToBDD.php';
-                            $requet = "SELECT answer FROM FAQ";
-                            $result = $connection->query($requet);
-                            $row = $result->fetch_assoc();
-                            echo $row['answer'];
-                        ?>
-                        </p>
-     
-        			</div>
-                </div>
+			<img src="./img/faq1.PNG" alt="faq"class="img1">
+			<div "main-content">
                 <div class="question-answer">
-        <div class="question"> 
-         <h2 class="question">
-                        <?php
-                            include 'connectionToBDD.php';
-                            $requet = "SELECT question FROM FAQ";
-                            $result = $connection->query($requet);
-                            $row = $result->fetch_assoc();
-                            echo $row['question'];
-                        ?>  
-                        </h2>
-         <button class="faq-button">
-          <span class="up-icon">
-           <i class="fa-solid fa-chevron-up"></i>
-          </span>
-          <span class="down-icon">
-           <i class="fa-solid fa-chevron-down"></i>
-          </span>
-         </button> 
-        </div>
-        <div class="answer">
-         <p class="answer">
-                        <?php
-                            include 'connectionToBDD.php';
-                            $requet = "SELECT answer FROM FAQ";
-                            $result = $connection->query($requet);
-                            $row = $result->fetch_assoc();
-                            echo $row['answer'];
-                        ?>
-                        </p>
-     
-        </div>
+					<?php
+
+						$requet = "SELECT question, answer FROM FAQ";
+						$result = $connection->query($requet);
+						while($row = $result->fetch_assoc()){
+							printf("
+							<div class=\"question\"> 
+								<h2 class=\"question\">%s</h2>
+								<button class=\"faq-button\">
+									<span class=\"up-icon\">
+										<i class=\"fa-solid fa-chevron-up\"></i>
+									</span>
+									<span class=\"down-icon\">
+										<i class=\"fa-solid fa-chevron-down\"></i>
+									</span>
+								</button> 
+							</div>
+							<div class=\"answer\">
+								<p class=\"answer\">%s</p>
+							</div>",$row['question'],$row['answer']);
+						}
+
+					?>
                 </div>
+			</div>	
 	
                 
-            </div>            
 		</main>
 	</div>	
 	<script src="../js/faq.js"></script>	
