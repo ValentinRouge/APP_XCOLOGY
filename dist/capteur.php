@@ -37,7 +37,6 @@
                         $row = $result->fetch_assoc();
                         echo $row['value']." ".$row['unité'];
                     ?>
-                    <script src="./js/capteur.js"></script>
                     </p>
                 </div>
                 <div class="px-2 border-r-4 border-XBlueStrong">
@@ -86,8 +85,10 @@
                     </p>
                 </div>  
             </div>
-
-            <p class="justify-center text-3xl text-XBlueStrong mt-3 font-bold">Veuillez vous connecter pour voir les données</p>
+            
+            <div class="justify-center text-3xl text-XBlueStrong mt-3 font-bold" id="notConnected">
+                <p>Veuillez vous connecter pour voir les données</p>
+            </div>
 
             <div class="flex flex-row items-center">
                 <p class="mt-4 text-light px-4">
@@ -111,5 +112,7 @@
 
 
         <?php include 'html/footer.html'?>
+        <script src="./js/capteur.js"></script>
+
     </body>
 </html>
