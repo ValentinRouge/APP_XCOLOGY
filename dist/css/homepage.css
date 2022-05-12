@@ -71,7 +71,7 @@ h1 span {
 
 .container-btn {
     position: absolute;
-    top: 445px;
+    top: 55%;
     z-index: 15;
     padding-left: 60px;
 
@@ -181,15 +181,6 @@ h1 span {
 #droite {
     right: 0
 }
-
-.scroll-down {
-    color: #ff008e;
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-}
-
-
 
 
 .services {
