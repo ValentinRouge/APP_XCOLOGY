@@ -20,69 +20,26 @@
             <hr>
             <table>
                 <input type="text" name="pseudo" id="pseudo" placeholder="Votre peusdo" required><br/>
-                
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required><br/>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" required><br/>
                 <input type="email" name="username" id="username" placeholder="Votre email" required><br/>
                 <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
                 <input type="password" name="password2" id="password2" placeholder="Confirmez votre mot de passe" required><br/>
-                <input type="submit" name="envoie" id="envoie" value="S'inscrire">
+                <input type="submit" name="envoie" id="envoie" value=" S'inscrire">
             </table>
         </form>
-        
+        <?php
+            if(isset($_GET['erreur'])){
+                $err = $_GET['erreur'];
+                if($err==1 || $err==2)
+                    echo "<p style='color:red'>Les mots de passe ne sont pas identiques</p>";
+            }
+        ?>
     </fieldset>
     </center>
 
     <?php
-
         include 'html/footer.html';
-        
-        if(isset($_POST['envoie'])) {
-
-            extract($_POST);
-
-            if (!empty ($password) && !empty($cpassword) && !empty($email)) {
-                
-                if($password == $cpassword) {
-                   
-                    $options = [
-                        'cost' => 13,
-                    ];
-    
-                    $hashpass = password_hash($password, PASSWORD_BCRYPT, $options);
-
-                    include 'connectionToBDD.php';
-                    global $connection;
-
-                    $c = $connection->prepare("SELECT email FROM User WHERE email = :email");
-                    $c->execute([
-                        'email' => $email
-                    ]);
-
-                    $result = $c->rowCount();
-
-                    if($result == 0) {
-                        $q = $connection->prepare("INSERT INTO User(email,password) VALUES(:email,:password)");
-                        $q->execute([
-                            'email' => $email,
-                            'password' => $hashpass
-                        ]);
-                        echo "Le compte a été créé";
-
-                        header('Location:index.php');
-                    }else{
-                        echo"Un email existe déjà";
-                        header('Location:index.php');
-                    }
-                    
-
-
-                }
-
-            }else {
-                echo "Veuilez remplir tous les champs";
-            }
-            
-
-        }
     ?>
 
 </body>
