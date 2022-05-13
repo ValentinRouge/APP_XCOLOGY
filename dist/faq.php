@@ -12,7 +12,7 @@
 </head>
 <body>
 	
-	<?php include 'html/header.html'; 
+	<?php include 'header.php'; 
             include 'connectionToBDD.php';
             ?>
 	<div class="inside">
