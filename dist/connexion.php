@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php 
-        include 'html/header.html';
+        include 'header.php';
     ?>
 
     <center>
@@ -23,7 +23,7 @@
                 </table>        
             </form>
             <?php
-                session_start();
+                if(session_status() !== PHP_SESSION_ACTIVE) session_start();
                 if(isset($_GET['erreur'])){
                         $err = $_GET['erreur'];
                         if($err==1 || $err==2)

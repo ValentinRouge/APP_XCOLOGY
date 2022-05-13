@@ -1,5 +1,5 @@
 <?php 
-    include 'html/header.html';
+    include 'header.php';
     include 'html/contact.html';
     include 'html/footer.html';
 ?>

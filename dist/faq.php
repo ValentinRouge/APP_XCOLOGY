@@ -12,7 +12,7 @@
 </head>
 <body>
 	
-	<?php include 'html/header.html'; 
+	<?php include 'header.php'; 
             include 'connectionToBDD.php';
             ?>
 	<div class="inside">
@@ -26,27 +26,28 @@
 		<main>
 			<img src="./img/faq1.PNG" alt="faq"class="img1">
 			<div "main-content">
-                <div class="question-answer">
 					<?php
 
 						$requet = "SELECT question, answer FROM FAQ";
 						$result = $connection->query($requet);
 						while($row = $result->fetch_assoc()){
 							printf("
-							<div class=\"question\"> 
-								<h2 class=\"question\">%s</h2>
-								<button class=\"faq-button\">
-									<span class=\"up-icon\">
-										<i class=\"fa-solid fa-chevron-up\"></i>
-									</span>
-									<span class=\"down-icon\">
-										<i class=\"fa-solid fa-chevron-down\"></i>
-									</span>
-								</button> 
-							</div>
-							<div class=\"answer\">
-								<p class=\"answer\">%s</p>
-							</div>",$row['question'],$row['answer']);
+							<div class=\"question-answer\">
+								<div class=\"question\"> 
+									<h2 class=\"question\">%s</h2>
+									<button class=\"faq-button\">
+										<span class=\"up-icon\">
+											<i class=\"fa-solid fa-chevron-up\"></i>
+										</span>
+										<span class=\"down-icon\">
+											<i class=\"fa-solid fa-chevron-down\"></i>
+										</span>
+									</button> 
+								</div>
+								<div class=\"answer\">
+									<p class=\"answer\">%s</p>
+								</div>
+							</div>	",$row['question'],$row['answer']);
 						}
 
 					?>
