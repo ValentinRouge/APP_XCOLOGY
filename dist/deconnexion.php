@@ -1,7 +1,7 @@
 <?php 
     session_start();
     session_destroy();
-    include 'html/header.html';
+    include 'header.php';
     include 'html/page-deconnexion.html';
     include 'html/footer.html';
 ?>
