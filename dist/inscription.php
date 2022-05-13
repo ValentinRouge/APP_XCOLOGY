@@ -20,6 +20,7 @@
             <hr>
             <table>
                 <input type="text" name="pseudo" id="pseudo" placeholder="Votre peusdo" required><br/>
+                
                 <input type="email" name="username" id="username" placeholder="Votre email" required><br/>
                 <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br/>
                 <input type="password" name="password2" id="password2" placeholder="Confirmez votre mot de passe" required><br/>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/output.css">
         <div id="SESSION_CONNECTED" class="hidden"> 
-            <?php session_start();
+            <?php if(session_status() !== PHP_SESSION_ACTIVE) session_start();
                 if (isset($_SESSION['username'])){
                     echo '1';
                 } else {

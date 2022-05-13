@@ -1,5 +1,6 @@
 <?php
-session_start();
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+
 if(isset($_POST['username']) && isset($_POST['password']))
 {
     include 'connectionToBDD.php';

@@ -5,7 +5,7 @@
         <title>XCOLOGY</title>
         <link href="css/output.css" rel="stylesheet">
         <div id="SESSION_CONNECTED" class="hidden"> 
-            <?php session_start();
+            <?php if(session_status() !== PHP_SESSION_ACTIVE) session_start();
                 if (isset($_SESSION['username'])){
                     $connected = TRUE;
                     if ($_SESSION['admin']==1){

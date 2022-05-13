@@ -8,7 +8,7 @@
         <div id="content">
             <!-- tester si l'utilisateur est connecté -->
             <?php
-                session_start();
+                if(session_status() !== PHP_SESSION_ACTIVE) session_start();
                 if (isset($_SESSION['username'])){
                     echo "connecté";
                 } else {
