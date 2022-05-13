@@ -11,21 +11,17 @@
                 include 'header.php';
 
                 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-                if (isset($_SESSION['username'])){
+                if ($_SESSION['connected']==1){
                     echo "connecté";
                 } else {
                     echo 'non connexté';
                 }
 
-                if($_SESSION['username'] !== ""){
-                    $user = $_SESSION['username'];
-                    // afficher un message
-                    echo "Bonjour $user, vous êtes connecté";
-                }
-
                 if($_SESSION['admin'] == 1){
                     echo "Bonjour cher administrateur";
                 }
+
+                echo $_SESSION['sessionID'];
             ?>
             
         </div>

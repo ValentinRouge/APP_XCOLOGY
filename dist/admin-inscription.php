@@ -22,11 +22,23 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['passw
         $requete = "INSERT INTO User (Pseudo, password, admin, email, lastname, firstname) VALUES ('$pseudo','$password', 0, '$username','$lastName','$firstName')";
         $exec_requete = mysqli_query($connection,$requete);
         if ($exec_requete){
-            $_SESSION['username'] = $pseudo;
-            $_SESSION['admin'] = 0;
-            $_SESSION['connected'] = 1;
-            $_SESSION['sessionID'] = 0;
-            header('Location: admin-panel.php');
+            $userID = mysqli_insert_id($connection);
+            $requete = "INSERT INTO connexion (connexion_id, user_id) VALUES (UUID(),'$userID')";
+            $exec_requete = mysqli_query($connection,$requete);
+            if ($exec_requete){
+                $requete = "SELECT connexion_id FROM connexion where user_id = '$userID' order by time DESC LIMIT 1";
+                $exec_requete = mysqli_query($connection,$requete);
+                $value = $exec_requete->fetch_assoc();
+
+                $connexionID = $value['connexion_id'];
+                $_SESSION['admin'] = 0;
+                $_SESSION['connected'] = 1;
+                $_SESSION['sessionID'] = $connexionID;
+
+                header("Location: admin-panel.php");
+
+            }
+
         } else {
             header('Location: inscription.php');
         }

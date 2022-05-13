@@ -6,7 +6,7 @@
         <link href="css/output.css" rel="stylesheet">
         <div id="SESSION_CONNECTED" class="hidden"> 
             <?php if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-                if (isset($_SESSION['username'])){
+                if (isset($_SESSION['connected'])){
                     $connected = TRUE;
                     if ($_SESSION['admin']==1){
                         $isadmin = TRUE;
@@ -51,7 +51,7 @@
                 <a class="btn-header" href="../deconnexion.php">Deconnexion</a>
             </div>
             <div class="flex flex-row">
-                <a class="btn-header">Mon Compte</a>
+                <a class="btn-header" href="mon-compte.php">Mon Compte</a>
             </div>
             <?php };
             if ($isadmin){ ?>
