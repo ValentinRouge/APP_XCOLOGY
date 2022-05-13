@@ -99,65 +99,6 @@ h1 span {
 }
 
 
-.container2 {
-    top: 250px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    opacity: 0.5;
-}
-
-.container2 .ring {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: -30px;
-    border: 4px solid transparent;
-    border-radius: 50%;
-    border-top: 4px solid #1c12a8;
-    animation: animate 4s linear infinite;
-
-}
-
-@keyframes animate 
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
-
-.container2 .ring:nth-child(3) {
-    position: absolute;
-    top: -66.66px;
-    z-index: 20;
-
-}
-
-.container2 .ring::before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #1c12a8 ;
-    box-shadow: 0 0 0 5px #1c12a833,
-    0 0 0 10px #1c12a822,
-    0 0 0 20px #1c12a811,
-    0 0 20px #1c12a8,
-    0 0 50px #1c12a8;
-
-
-}
 /*diaporama defilement */
 
 .images {
