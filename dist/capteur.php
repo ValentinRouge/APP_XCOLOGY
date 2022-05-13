@@ -18,8 +18,9 @@
         <title>Capteur zone singe</title>
     </head>
     <body class="bg-XBlueLight">
-        <?php include 'html/header.html';
-        include 'connectionToBDD.php'
+        <?php 
+            include 'header.php';
+            include 'connectionToBDD.php'
         ?>
         <div class="relative">
             <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 

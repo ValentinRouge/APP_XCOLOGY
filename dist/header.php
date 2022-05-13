@@ -4,6 +4,21 @@
         <meta charset="utf-8">
         <title>XCOLOGY</title>
         <link href="css/output.css" rel="stylesheet">
+        <div id="SESSION_CONNECTED" class="hidden"> 
+            <?php session_start();
+                if (isset($_SESSION['username'])){
+                    $connected = TRUE;
+                    if ($_SESSION['admin']==1){
+                        $isadmin = TRUE;
+                    } else {
+                        $isadmin = FALSE;
+                    }
+                } else {
+                    $connected = FALSE;
+                    $isadmin = FALSE;
+                }
+            ?> 
+        </div>
     </head>
     <body >
         <div class="flex flex-row flex-wrap bg-XBlueStrong text-XBlueLight gap-x-5 px-3 min-h-16">
@@ -23,15 +38,27 @@
             <div class="flex flex-row">
                 <a class="btn-header w-40" href="../contact.php">Informations pratiques & contact</a>
             </div>
+            <?php if (!$connected){ ?>
             <div class="flex flex-row">
                 <a class="btn-header" href="../inscription.php">Inscription</a>
             </div>
             <div class="flex flex-row">
                 <a class="btn-header" href="../connexion.php">Connexion</a>
             </div>
+            <?php };
+            if ($connected){ ?>
+            <div class="flex flex-row">
+                <a class="btn-header" href="../deconnexion.php">Deconnexion</a>
+            </div>
             <div class="flex flex-row">
                 <a class="btn-header">Mon Compte</a>
             </div>
+            <?php };
+            if ($isadmin){ ?>
+            <div class="flex flex-row">
+                <a class="btn-header" href="../admin-panel.php">Espace<br>administrateur</a>
+            </div>
+            <?php }; ?>
 
         </div>
     </body>

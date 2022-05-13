@@ -1,4 +1,4 @@
-<?php include 'html/header.html'; ?>
+<?php include 'header.php'; ?>
 <style>
     <?php include './css/stylementions.css'; ?>
 </style>
