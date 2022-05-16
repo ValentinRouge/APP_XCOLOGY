@@ -1,29 +1,33 @@
-corps {
-    display: flex;
-    color: black;
-    background-color:#daeaf6;;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
+body{
+    background-image: url(../img/panda.jpg);
+    background-attachment: fixed;
+    background-size:100%;
 }
 
 .Titre{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 1.2em;
     justify-content: start;
    
     margin-left: 1%;
-    margin-top: -0.5%;
+    margin-top: -1%;
 }
 #corps{
     display: flex;
+    color: black;
+    background-color:#daeaf6;
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: column;
+    justify-content: center;
 }
 #autres-questions{
-    margin-left: 3em;
-    color: #daeaf6;
+    margin-left: -5em;
+    color: black;
+    text-align: center ;
+
 
 }
 
@@ -49,12 +53,12 @@ div.horaires{
     margin-top: 2%;
 }
 img#calendrier{
-    width: 80px;
+    width: 7em;
     margin-left: 1%;
     vertical-align: middle;
 }
 img#horloge{
-    width: 80px;
+    width: 7em;
     margin-left: 1%;
     vertical-align: middle;
 
@@ -66,32 +70,40 @@ span.text{
     font-family: arial, Helvetica, sans-serif;
 }
 span.texte{
-    font-size: 23px;
+    font-size: 1.6em;
     justify-content: center;
     font-family: arial, Helvetica, sans-serif;
 }
 textarea#Question{
-    width: 400px;
-    height: 50px;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    margin-left: 0.73em;
+    width: 21em;
+    height: 1.7em;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    margin-left: 1.6em;
     border-radius: 5%;
 }
+textarea#sujet{
+    width: 44.5em;
+    height: 1.7em;
+    font-size: 1rem;
+    letter-spacing: 0.01em; 
+    margin-left: 1.6em;
+    border-radius: 3%;
+}
 textarea#Mail{
-    width: 850px;
-    height: 50px;
-    font-size: 2rem;
-    letter-spacing: 1px; 
-    margin-left: 0.73em;
-    border-radius: 5%;
+    width: 21em;
+    height: 1.7em;
+    font-size: 1rem;
+    letter-spacing: 0.01em; 
+    margin-left: 1.6em;
+    border-radius: 3%;
 
 }
 textarea#ameliorer{
-    width: 850px;
-    height: 400px;
+    width: 29.7em;
+    height: 10em;
     font-size: 1.5rem;
-    letter-spacing: 1px; 
+    letter-spacing: 0.001em; 
     margin-left: 1em;
     border-radius: 5%;
 }
@@ -99,31 +111,43 @@ textarea#ameliorer{
 
 
 .formulaire{
-    margin-top: 1em;
-    font-size: 30px;
-    margin-left: 15%;
+    font-size: 2em;
     font-family: arial, Helvetica, sans-serif;
-    background-color: #124E96;
     border-radius: 15%;
-    width: 900px;
-    height: 1000px;
-    justify-content: center;
+    width: 28.5em;
+    height: 30em;
+    margin-top: 5em;
+    align-content: center;
+
+
 }
 span.Question{
-    font-size: 40px;
+    font-size: 2em;
 
+}
+span.contact_titre{
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #124E96;
+}
+
+img#fleche{
+    width: 10%;
+}
+
+.titre_page{
+    margin-top: 20%;
+    text-align: center;
 }
 
 .map{
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
     justify-content: center ;
-    
+    background-color: #daeaf6;
 }
 span.carte{
-    font-size: 55px;
+    font-size: 3.2em;
     margin-bottom: 2%;  
     font-family: arial, Helvetica, sans-serif;
     margin-left: 20%;
@@ -163,28 +187,41 @@ input{
     background-color: rgb(98, 200, 247);
     border:1px solid #000000;
     border-radius:5px;
-    width: 300px;
-    height: 75px;
+    width: 6em;
+    height: 3em;
     font-size:x-large;
-    margin-left: 5em;
+    margin-left: 20%;
 }
 
+#tel{
+     
+}
 
 
 
 
 .info-direct{
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    align-items: center;
+    background-color:#daeaf6 ;
+    margin-top: 30%;
 }
 
 
 
-@media screen and (max-width: 600px){
-    #corps{ 
+
+@media screen and (max-width: 800px){
+    body{
+        justify-content: center;
+    }
+    .Titre{
+        justify-content: center;
+    }
+    .info-direct{ 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
     }
     .bande{
         display: row;

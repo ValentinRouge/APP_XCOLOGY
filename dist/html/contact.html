@@ -13,69 +13,104 @@
       </style>
 </head>
 <body>
-    <corps> 
-
-        <div class="corps">
-            <div class="info-direct">
-                <a name="haut"></a>
-                        <div class="info-texte">
-                            <div class="Titre">
-                                    <p id="mail">Par mail: xcolozoo@herogu.garage.com</p>
-                                    <p id="tel">Par téléphone: 06.41.41.41.41 </p>
-                                    <p id="agence">Un agent vous répondra du mardi au vendredi de 9h à 17h </p>
-                                    <p id="reseaux">Sur nos réseaux:</p>
-                            </div>
-                        
-                            <div class = "logos">
-                                <a href="https://www.facebook.com/"><img id="fb" class="logo" src="../img/fb_contact.png"/></a>
-                                <a href="https://instagram.com/"><img id="insta" class="logo" src="../img/insta_contact.png"></a>
-                                <a href="https://twitter.com/"><img id="twitter" class="logo" src="../img/twitter_contact.jpg"></a><br>
-                            </div>
-                            <div class = "horaires">
-                                <a name="info"></a>
-                                <div class="date" onmouseenter="datechange()">
-                                    <img id="calendrier"  src="../img/Calendrier.png"/>
-                                    <span class="texte"> mardi/mercredi/jeudi/vendredi/samedi - 9h-19h</span>
-                                </div>
-                
-                                <div class="heure">
-                                    <img id="horloge" onmouseenter="heurechange()" src="../img/horloge.png"/>
-                                    <span class="texte"> lundi - 9h-12h </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="formulaire">
-                            <a name="form"></a>
-                            <h4 id="autres-questions">D'autres questions? Laissez nous un message!</h4>
-                            <form method="post" action="../js/traitement.php">
-                                <span>
-                                    <label for="Question"><br/>
-                                    <textarea name="Nom" id="Question" placeholder="Nom" maxlength="47"></textarea>
-                                </span>
-                                <span>
-                                    <label for="Question"><br/>
-                                    <textarea name="Prenom" id="Question" placeholder="Prénom" maxlength="50"></textarea>
-                                </span>
-                                <span>
-                                    <label for="Mail"><br/>
-                                    <textarea name="Mail" id="Mail" placeholder="Mail" maxlength="100"></textarea>
-                                </span>
-                                <span>
-                                    <label for="ameliorer"><br/>
-                                    <textarea name="ameliorer" id="ameliorer" placeholder=" Tapez votre message" maxlength="2000"></textarea>
-                                </span>
-                                <br><input type="submit", value="Envoyer", style= " font-size : 0.5em"/>
-                                <input type="reset", value="Effacer", style= " font-size : 0.5em" /><br/>
-                            </form>
-                        </div>
-            </div>
-            <div class ="map">
-                <span class="carte">Retrouvez nous ici!</span>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5416.950326179935!2d1.3436585785643367!3d47.24641109989562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fb58552d6f61ff%3A0x9cfdfb800cb359b!2sZooParc%20de%20Beauval!5e0!3m2!1sfr!2sfr!4v1652173887132!5m2!1sfr!2sfr" width="1500" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+   
+    <div class="corps">
+        <div class = "titre_page">
+            <span class="contact_titre">Nous contacter</span>
+            <br><img id="fleche" class="img" src="../img/fleche-droite.png"/>
         </div>
-    </corps>
+        <div class="info-direct">
+            <a name="haut"></a>
+                    <div class="formulaire">
+                        <a name="form"></a>
+                        <h4 id="autres-questions">Une question? <br> Laissez nous un message!</h4>
+                        <form method="post" action="../js/traitement.php">
+                            <span>
+                                <label for="Question"><br/>
+                                <textarea name="Nom" id="Question" placeholder="Nom" maxlength="47"></textarea>
+                            </span>
+                            <span>
+                                <label for="Question">
+                                <textarea name="Prenom" id="Question" placeholder="Prénom" maxlength="50"></textarea>
+                            </span>
+                            <span>
+                                <label for="Question"><br>
+                                <textarea name="Telephone" id="Question" placeholder="Téléphone" maxlength="50"></textarea>
+                            </span>
+                            <span>
+                                <label for="Mail">
+                                <textarea name="Mail" id="Mail" placeholder="Mail" maxlength="100"></textarea>
+                            </span>
+                            <span>
+                                <label for="sujet">
+                                <textarea name="sujet" id="sujet" placeholder="Objet" maxlength="100"></textarea>
+                            </span>
+                            <span>
+                                <label for="ameliorer"><br/>
+                                <textarea name="ameliorer" id="ameliorer" placeholder=" Tapez votre message" maxlength="2000"></textarea>
+                            </span>
+                            <br><input type="submit", value="Envoyer", style= " font-size : 0.5em"/>
+                            <input type="reset", value="Effacer", style= " font-size : 0.5em" /><br/>
+                        </form>
+                    </div>
+
+
+
+                    <div class="info-texte">
+                        <div class="Titre">
+                                <div class="premiere_ligne">
+                                    <div class="email">
+                                        <img id="mail" class="mail" src="../img/email.png">
+                                        <span>xcolozoo@herogu.garage.com</span>
+                                    </div>
+                                    <div class="telephone">
+                                        <img id="tel" class="tel" src="../img/appel-telephonique.png">
+                                        <span>06.41.41.41.41</span>
+                                    </div>
+                                    <div class="agent">
+                                        <img id="agence" class="agence" src="../img/operateur.png">
+                                        <span>du mardi au lundi 15h-14h</span>
+                                    </div>
+                                </div>
+
+
+
+
+                                <p id="mail">Par mail: xcolozoo@herogu.garage.com</p>
+                                <p id="tel">Par téléphone:</p>
+                                <p id="tel">06.41.41.41.41</p>
+                                <p id="agence">Un agent vous répondra</p>
+                                <p id="agence">du mardi au vendredi de 9h à 17h</p>
+                                <p id="reseaux">Sur nos réseaux:</p>
+                        </div>
+                    
+                        <div class = "logos">
+                            <a href="https://www.facebook.com/"><img id="fb" class="logo" src="../img/fb_contact.png"/></a>
+                            <a href="https://instagram.com/"><img id="insta" class="logo" src="../img/insta_contact.png"></a>
+                            <a href="https://twitter.com/"><img id="twitter" class="logo" src="../img/twitter_contact.jpg"></a><br>
+                        </div>
+                        <div class = "horaires">
+                            <a name="info"></a>
+                            <div class="date" onmouseenter="datechange()">
+                                <img id="calendrier"  src="../img/Calendrier.png"/>
+                                <span class="texte"> mardi/mercredi/jeudi/vendredi/samedi - 9h-19h</span>
+                            </div>
+            
+                            <div class="heure">
+                                <img id="horloge" onmouseenter="heurechange()" src="../img/horloge.png"/>
+                                <span class="texte"> lundi - 9h-12h </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+        </div>
+
+        <div class ="map">
+            <span class="carte">Retrouvez nous ici!</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5416.950326179935!2d1.3436585785643367!3d47.24641109989562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fb58552d6f61ff%3A0x9cfdfb800cb359b!2sZooParc%20de%20Beauval!5e0!3m2!1sfr!2sfr!4v1652173887132!5m2!1sfr!2sfr" width="1500" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
     <script src="../js/contact.js"></script>
 </body>
 </html>
