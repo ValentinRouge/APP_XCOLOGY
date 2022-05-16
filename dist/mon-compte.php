@@ -31,12 +31,11 @@
             $UserLName = $value['lastName'];
             $UserEmail = $value['email'];
 
-
-
-
         ?>
 
-        <div class="mt-5 pl-40">
+
+        <div class='my-5 pl-40' id="view-account">
+            <img src="./img/pen.svg" alt="un stylo pour modifier" class="h-10 float-right pr-40 cursor-pointer transition-all ease-in-out hover:scale-105 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none" id="editBTN">
             <h1 class="text-3xl mb-2">Bonjour <?php echo $UserPeusdo ?> 👋</h1>
 
             <h2 class="font-medium text-xl">Vos informations de compte : </h2>
@@ -44,10 +43,10 @@
             <p>Prénom : <?php echo $UserFName ?></p>
             <p>Adresse mail : <?php echo $UserEmail ?></p>
 
-
         </div>
 
-        <div class="mt-5 pl-40">
+        <div class="my-5 pl-40 hidden transition-all" id="modify-account">
+            <img src="./img/close.svg" alt="un stylo pour modifier" class="h-10 float-right pr-40 cursor-pointer transition-all ease-in-out hover:scale-105 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none" id="closeBTN">
             <form action="admin-update-profile.php" method="POST">
                 <h1 class="text-3xl mb-2"> Bonjour <input type="text" value="<?php echo $UserPeusdo ?>"></input>👋<h1>
 
@@ -55,11 +54,15 @@
                 <p>Nom : <input type="text" value="<?php echo $UserLName ?>"></input></p>
                 <p>Prénom : <input type="text" value="<?php echo $UserFName ?>"></input></p>
                 <p>Adresse mail : <input type="text" value="<?php echo $UserEmail ?>"></input></p>
+                <input type="submit" value="Sauvegarder" class="cursor-pointer px-2 mt-2 animate-pulse py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">
             </form>
-
         </div>
+
+        <button class="ml-40 cursor-pointer px-2 py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">Modifier mon mot de passe</button><br>
+        <button class="ml-40 mb-5 cursor-pointer text-red-600">Supprimer mon compte</button>
         
         <?php include 'html/footer.html'?>
+        <script src="./js/mon-compte.js"></script>
 
     </body>
 </html>
