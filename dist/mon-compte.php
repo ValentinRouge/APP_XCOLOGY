@@ -47,13 +47,13 @@
 
         <div class="my-5 pl-40 hidden transition-all" id="modify-account">
             <img src="./img/close.svg" alt="un stylo pour modifier" class="h-10 float-right pr-40 cursor-pointer transition-all ease-in-out hover:scale-105 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none" id="closeBTN">
-            <form action="admin-update-profile.php" method="POST">
-                <h1 class="text-3xl mb-2"> Bonjour <input type="text" value="<?php echo $UserPeusdo ?>"></input>👋<h1>
+            <form action="admin-update-account.php" method="POST">
+                <h1 class="text-3xl mb-2"> Bonjour <input type="text" name="Pseudo" value="<?php echo $UserPeusdo ?>"></input>👋<h1>
 
                 <h2 class="font-medium text-xl">Vos informations de compte : </h2>
-                <p>Nom : <input type="text" value="<?php echo $UserLName ?>"></input></p>
-                <p>Prénom : <input type="text" value="<?php echo $UserFName ?>"></input></p>
-                <p>Adresse mail : <input type="text" value="<?php echo $UserEmail ?>"></input></p>
+                <p>Nom : <input type="text" name="LName" value="<?php echo $UserLName ?>"></input></p>
+                <p>Prénom : <input type="text" name="FName" value="<?php echo $UserFName ?>"></input></p>
+                <p>Adresse mail : <input type="email" name="Email" value="<?php echo $UserEmail ?>"></input></p>
                 <input type="submit" value="Sauvegarder" class="cursor-pointer px-2 mt-2 animate-pulse py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">
             </form>
         </div>
