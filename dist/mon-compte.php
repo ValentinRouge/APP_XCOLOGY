@@ -67,7 +67,9 @@
                 <input type="submit" value="Sauvegarder" id="savePassBTN" class="cursor-pointer px-2 mt-1 animate-pulse py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">
             </form>
         </div>
-        <button class="ml-40 mb-5 cursor-pointer text-red-600">Supprimer mon compte</button>
+        <form action="admin-delete-account.php" method="POST" class="ml-40 mb-5">
+            <input type="submit" value="Supprimer mon compte" class="cursor-pointer text-red-600">
+        </form>
         
         <?php include 'html/footer.html'?>
         <script src="./js/mon-compte.js"></script>
