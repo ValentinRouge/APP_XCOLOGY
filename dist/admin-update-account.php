@@ -11,7 +11,7 @@ if(isset($_POST['Pseudo']) && isset($_POST['LName']) && isset($_POST['FName']) &
     $Email = mysqli_real_escape_string($connection,htmlspecialchars($_POST['Email']));
     $connID = $_SESSION['sessionID'];
 
-    if($username !== "" && $password !== "" && $password2 !== "" && $pseudo !== "")
+    if($Pseudo !== "" && $LName !== "" && $FName !== "" && $Email !== "")
     {
         $requete = "UPDATE User SET Pseudo = '$Pseudo', email = '$Email', lastName = '$LName', firstName = '$FName'
         WHERE User_id = (SELECT user_id FROM connexion WHERE connexion_id = '$connID')";

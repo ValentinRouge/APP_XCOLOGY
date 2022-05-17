@@ -58,7 +58,15 @@
             </form>
         </div>
 
-        <button class="ml-40 cursor-pointer px-2 py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">Modifier mon mot de passe</button><br>
+        <div id="changePasswordBTN"><button class="ml-40 cursor-pointer px-2 py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">Modifier mon mot de passe</button><br></div>
+        <div class = "ml-40 hidden" id="changePassword">
+            <form action="admin-update-password.php" method="POST">
+                <p>Nouveau mot de passe : <input type="password" name="pass" id="pass"></p>
+                <p>Confirmation de mot de passe : <input type="password" name="pass2" class="mt-1" id="pass2"></p>
+                <p class="text-sm text-red-800 hidden" id="erreurSTRING">Les mots de passe ne sont pas identiques</p>
+                <input type="submit" value="Sauvegarder" id="savePassBTN" class="cursor-pointer px-2 mt-1 animate-pulse py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">
+            </form>
+        </div>
         <button class="ml-40 mb-5 cursor-pointer text-red-600">Supprimer mon compte</button>
         
         <?php include 'html/footer.html'?>
