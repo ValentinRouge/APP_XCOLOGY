@@ -30,7 +30,6 @@
             $UserFName = $value['firstName'];
             $UserLName = $value['lastName'];
             $UserEmail = $value['email'];
-
         ?>
 
 
