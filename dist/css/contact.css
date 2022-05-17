@@ -136,12 +136,14 @@ span.contact_titre{
 
 img#fleche{
     width: 10%;
+    justify-content: center;
 }
 
 .titre_page{
     margin-top: 20%;
     text-align: center;
 }
+
 
 .map{
     display: flex;
