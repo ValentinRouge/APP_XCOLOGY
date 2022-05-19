@@ -806,6 +806,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(11 138 188 / var(--tw-bg-opacity));
 }
 
+.fill-XBlueStrong {
+  fill: #124e96;
+}
+
+.stroke-XBlueStrong {
+  stroke: #124e96;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -967,6 +975,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-XBlueStrong:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(18 78 150 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-XBlueStrong:hover {
+  fill: #124e96;
+}
+
+.hover\:stroke-XBlueStrong:hover {
+  stroke: #124e96;
 }
 
 .hover\:text-XBlueLight:hover {

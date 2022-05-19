@@ -20,13 +20,14 @@
                 </tr>
                 <?php
 
-                $requet = "SELECT question, answer FROM FAQ";
+                $requet = "SELECT FAQ_id,question, answer FROM FAQ";
                 $result = $connection->query($requet);
                 while($row = $result->fetch_assoc()){ 
                 ?>
                     <tr>
                         <td class="faq-td-td"> <?php echo $row['question'] ?> </td>
                         <td class="faq-td-td"> <?php echo $row['answer'] ?> </td>
+                        <th class="pl-1"><a href="admin-delete-FAQ.php?id=<?php echo $row['FAQ_id'] ?>"><img src="./img/delete.svg" alt="Supprimer"></a></th>
                     </tr>
                 <?php }
                 ?>
