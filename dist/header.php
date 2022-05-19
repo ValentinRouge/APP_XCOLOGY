@@ -29,7 +29,7 @@
                 <a class="btn-header" href="../capteur.php">Capteur</a>
             </div>
             <div class="flex flex-row">
-                <a class="btn-header" href="../pageenviro.html">Environnement</a>
+                <a class="btn-header" href="../dist/pageenviro.html">Environnement</a>
             </div>
             <div class="flex flex-row">
                 <a class="btn-header" href="../mini-jeu.php">Le mini jeu</a>
