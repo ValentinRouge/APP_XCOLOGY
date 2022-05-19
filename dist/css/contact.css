@@ -2,6 +2,8 @@ body{
     background-image: url(../img/panda.jpg);
     background-attachment: fixed;
     background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Titre{
@@ -273,6 +275,8 @@ html{
 @media screen and (max-width: 800px){
     body{
         justify-content: center;
+        display:empty;
+        background-image: url(../img/Xcolozoo-deco.jpg);
     }
     .Titre{
         justify-content: center;
@@ -284,5 +288,9 @@ html{
     }
     .bande{
         display: row;
+    }
+    .formulaire{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
