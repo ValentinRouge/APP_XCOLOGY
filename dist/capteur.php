@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/output.css">
         <div id="SESSION_CONNECTED" class="hidden"> 
             <?php if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-                if (isset($_SESSION['username'])){
+                if (isset($_SESSION['connected'])){
                     echo '1';
                 } else {
                     echo '0';

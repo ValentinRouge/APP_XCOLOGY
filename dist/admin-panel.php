@@ -13,10 +13,10 @@
 
         <div id="FAQ">
             <h1>Gestion de la FAQ</h1>
-            <table>
+            <table class="border-collapse table-auto w-11/12 mx-auto">
                 <tr>
-                    <th>Question</th>
-                    <th>Réponse</th>
+                    <th class="faq-td-td bg-XBlueStrong text-white font-bold">Question</th>
+                    <th class="faq-td-td bg-XBlueStrong text-white font-bold">Réponse</th>
                 </tr>
                 <?php
 
@@ -25,19 +25,28 @@
                 while($row = $result->fetch_assoc()){ 
                 ?>
                     <tr>
-                        <td> <?php echo $row['question'] ?> </td>
-                        <td> <?php echo $row['answer'] ?> </td>
+                        <td class="faq-td-td"> <?php echo $row['question'] ?> </td>
+                        <td class="faq-td-td"> <?php echo $row['answer'] ?> </td>
                     </tr>
                 <?php }
                 ?>
+
+                <form action="admin-add-to-FAQ.php" method="POST">
+                    <td class="faq-td-td px-0">
+                        <input type="text" placeholder="Entrer la question" name="question" required class="w-full mx-0 bg-XBlueLight">
+                    </td>
+                    <td class="faq-td-td px-0">
+                        <input type="text" placeholder="Entrer la réponse" name="answer" required class="w-full mx-0 bg-XBlueLight">
+                    </td>
+                    <td class="pl-1">
+                        <input type="image" src="./img/add.svg" alt="Ajouter">
+                    </td>
+                </form>
+
             </table>
             
 
-            <form action="admin-add-to-FAQ.php" method="POST">
-                <input type="text" placeholder="Entrer la question" name="question" required>
-                <input type="text" placeholder="Entrer la réponse" name="answer" required>
-                <input type="submit" name="formlogin" id="formlogin" value="Ajouter à la FAQ">
-            </form>
+
         </div>
 
         <?php include './html/footer.html' ?>
