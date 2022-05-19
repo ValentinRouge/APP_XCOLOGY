@@ -14,4 +14,8 @@
     .collone-memory{
         @apply ml-3
     }
+
+    .faq-td-td{
+        @apply border border-solid border-XBlueMiddle py-1 px-2
+    }
 }
