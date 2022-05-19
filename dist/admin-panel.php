@@ -13,17 +13,25 @@
 
         <div id="FAQ">
             <h1>Gestion de la FAQ</h1>
-            <?php
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Réponse</th>
+                </tr>
+                <?php
 
                 $requet = "SELECT question, answer FROM FAQ";
                 $result = $connection->query($requet);
                 while($row = $result->fetch_assoc()){ 
-            ?>
-            <p> <?php echo $row['question'] ?> </p>
-            <p> <?php echo $row['answer'] ?> </p>
-
-            <?php }
-            ?>
+                ?>
+                    <tr>
+                        <td> <?php echo $row['question'] ?> </td>
+                        <td> <?php echo $row['answer'] ?> </td>
+                    </tr>
+                <?php }
+                ?>
+            </table>
+            
 
             <form action="admin-add-to-FAQ.php" method="POST">
                 <input type="text" placeholder="Entrer la question" name="question" required>
