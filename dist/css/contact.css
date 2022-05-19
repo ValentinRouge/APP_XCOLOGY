@@ -57,12 +57,14 @@ div.horaires{
     background-color: #daeaf6;
 }
 img#calendrier{
-    width: 5em;
+    max-width: 5em;
+    max-height: 5em;
     margin-left: 1%;
     vertical-align: middle;
 }
 img#horloge{
-    width: 5em;
+    max-width: 5em;
+    max-height: 5em;
     margin-left: 1%;
     vertical-align: middle;
 
@@ -77,6 +79,8 @@ span.texte{
     font-size: 1.6em;
     justify-content: center;
     font-family: arial, Helvetica, sans-serif;
+    
+    
 }
 textarea#Question{
     width: 21em;
@@ -177,11 +181,22 @@ span.carte{
 }
 .heure{
     vertical-align: middle;
+    display: flex;
 }
 .date{
+    display: flex;
     vertical-align: middle;
+
+}
+.text_date{
+    max-height: 2em;
+
 }
 
+.text_heure{
+    max-height: 2em;
+
+}
 .contact-direct{
     display: flex;
     flex-direction: row;
@@ -269,6 +284,8 @@ img#agence{
 html{
     scroll-behavior: smooth;
 }
+
+
 
 
 
