@@ -35,7 +35,7 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['passw
                 $_SESSION['connected'] = 1;
                 $_SESSION['sessionID'] = $connexionID;
 
-                header("Location: admin-panel.php");
+                header("Location: mon-compte.php");
 
             }
 
