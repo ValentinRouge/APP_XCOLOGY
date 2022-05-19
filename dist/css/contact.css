@@ -47,14 +47,15 @@ body{
     margin-bottom: 1%;
 
 }
-
-
-
 div.horaires{
     display: flex;
     flex-direction: row;
     margin-top: 2%;
     background-color: #daeaf6;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -40%;
 }
 img#calendrier{
     max-width: 5em;
