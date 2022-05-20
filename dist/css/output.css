@@ -581,6 +581,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   float: right;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -647,6 +651,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -689,6 +697,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-40 {
   width: 10rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.max-w-\[2em\] {
+  max-width: 2em;
 }
 
 .grow {
@@ -808,6 +824,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -843,6 +863,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-40 {
   padding-right: 10rem;
+}
+
+.pr-0 {
+  padding-right: 0px;
 }
 
 .text-center {
