@@ -111,7 +111,6 @@
         </div>
         
 
-
         <?php include 'html/footer.html'?>
         <script src="./js/capteur.js"></script>
 

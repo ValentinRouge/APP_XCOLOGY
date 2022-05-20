@@ -54,7 +54,7 @@
                 <p>Prénom : <input id="ChampPrénom" type="text" name="FName" value="<?php echo $UserFName ?>" required></input></p>
                 <p>Adresse mail : <input id="ChampMail" type="email" name="Email" value="<?php echo $UserEmail ?>" required></input></p>
                 <p class="text-sm text-red-800 hidden" id="erreurSTRINGAccount">Les mots de passe ne sont pas identiques</p>
-                <input type="submit" value="Sauvegarder" id="saveAccBTN" class="cursor-pointer px-2 mt-2 animate-pulse py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition">
+                <input type="submit" value="Sauvegarder" id="saveAccBTN" class="cursor-pointer px-2 mt-2 py-1 rounded bg-XBlueMiddle text-white hover:bg-XBlueStrong hover:text-XBlueLight transition animate-pulse">
             </form>
         </div>
 
