@@ -19,7 +19,8 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['passw
 
     if($username !== "" && $password !== "" && $password2 !== "" && $pseudo !== "")
     {
-        $requete = "INSERT INTO User (Pseudo, password, admin, email, lastname, firstname) VALUES ('$pseudo','$password', 0, '$username','$lastName','$firstName')";
+        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+        $requete = "INSERT INTO User (Pseudo, password, admin, email, lastname, firstname) VALUES ('$pseudo','$passwordHash', 0, '$username','$lastName','$firstName')";
         $exec_requete = mysqli_query($connection,$requete);
         if ($exec_requete){
             $userID = mysqli_insert_id($connection);

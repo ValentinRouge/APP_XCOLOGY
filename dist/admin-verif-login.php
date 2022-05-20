@@ -13,34 +13,38 @@ if(isset($_POST['username']) && isset($_POST['password']))
     
     if($username !== "" && $password !== "")
     {
-        $requete = "SELECT User_id, admin FROM User where 
-              email = '".$username."' AND password = '".$password."' ";
+        $requete = "SELECT User_id, admin, password FROM User where 
+              email = '".$username."'";
         $exec_requete = mysqli_query($connection,$requete);
-        $count = mysqli_num_rows($exec_requete);
-        if($count==1) // nom d'utilisateur et mot de passe correctes
+        if($exec_requete)
         {
             $reponse = mysqli_fetch_array($exec_requete);
-            $userID = $reponse['User_id'];
-            $requete = "INSERT INTO connexion (connexion_id, user_id) VALUES (UUID(),'$userID')";
-            $exec_requete = mysqli_query($connection,$requete);
-            if ($exec_requete){
-                $requete = "SELECT connexion_id FROM connexion where user_id = '$userID' order by time DESC LIMIT 1";
+            $passwordHash = $reponse['password'];
+            if (password_verify($password, $passwordHash)){
+                $userID = $reponse['User_id'];
+                $requete = "INSERT INTO connexion (connexion_id, user_id) VALUES (UUID(),'$userID')";
                 $exec_requete = mysqli_query($connection,$requete);
-                $value = $exec_requete->fetch_assoc();
-
-                $connexionID = $value['connexion_id'];
-                $_SESSION['admin'] = $reponse['admin'];
-                $_SESSION['connected'] = 1;
-                $_SESSION['sessionID'] = $connexionID;
-
-                header("Location: mon-compte.php");
+                if ($exec_requete){
+                    $requete = "SELECT connexion_id FROM connexion where user_id = '$userID' order by time DESC LIMIT 1";
+                    $exec_requete = mysqli_query($connection,$requete);
+                    $value = $exec_requete->fetch_assoc();
+    
+                    $connexionID = $value['connexion_id'];
+                    $_SESSION['admin'] = $reponse['admin'];
+                    $_SESSION['connected'] = 1;
+                    $_SESSION['sessionID'] = $connexionID;
+    
+                    header("Location: mon-compte.php");
+                }
+            } else {
+                echo "la";
+                //header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
             }
-            
-            //header('Location: admin-panel.php');
         }
         else
         {
-           header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
+            echo "ici";
+           //header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
         }
     }
     else

@@ -11,7 +11,8 @@ if(isset($_POST['pass']) && isset($_POST['pass2']))
 
     if($pass !== "" && $pass2 !== "" && $pass == $pass2)
     {
-        $requete = "UPDATE User SET password = '$pass'
+        $passwordHash = password_hash($pass, PASSWORD_DEFAULT);
+        $requete = "UPDATE User SET password = '$passwordHash'
         WHERE User_id = (SELECT user_id FROM connexion WHERE connexion_id = '$connID')";
         $exec_requete = mysqli_query($connection,$requete);
         
