@@ -17,7 +17,7 @@
                 <h1>Connexion</h1>
                 <hr>
                 <table>
-                    <input type="email" placeholder="Entrer le nom d'utilisateur" name="username" required><br/>
+                    <input type="text" placeholder="Entrer votre pseudo ou mail" name="username" required><br/>
                     <input type="password" placeholder="Entrer le mot de passe" name="password" required><br/>
                     <input type="submit" name="formlogin" id="formlogin" value="Se connecter">
                 </table>        

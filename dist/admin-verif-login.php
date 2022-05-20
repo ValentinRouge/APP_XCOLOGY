@@ -14,7 +14,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     if($username !== "" && $password !== "")
     {
         $requete = "SELECT User_id, admin, password FROM User where 
-              email = '".$username."'";
+              (email = '".$username."') OR (Pseudo = '".$username."')";
         $exec_requete = mysqli_query($connection,$requete);
         if($exec_requete)
         {
