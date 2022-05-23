@@ -22,6 +22,9 @@
                     <input type="submit" name="formlogin" id="formlogin" value="Se connecter">
                 </table>        
             </form>
+
+            <a href="relnit-password.php">Reinitialiser mon mot de passe</a>
+
             <?php
                 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
                 if(isset($_GET['erreur'])){

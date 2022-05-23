@@ -92,17 +92,52 @@
             <div class = "horaires">
                 <a name="info"></a>
                 <div class="date" onmouseenter="datechange()">
-                    <img id="calendrier"  src="../img/Calendrier.png"/>
-                    <div class="text_date">
-                        <span class="texte"> mardi/mercredi/jeudi/vendredi/samedi - 9h - 19h </span>
+                    <div class="img_info">
+                        <img id="calendrier"  src="../img/Calendrier.png"/>
+                        <img id="horloge" onmouseenter="heurechange()" src="../img/horloge.png"/>
                     </div>
-                </div>
-    
-                <div class="heure">
-                    <img id="horloge" onmouseenter="heurechange()" src="../img/horloge.png"/>
-                    <div class="text_heure">
-                        <span class="texte">lundi - 9h-12h </span>
-                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan = "2"> Horaires</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> lundi </td>
+                                <td> fermé </td>
+                            </tr>
+                            <tr>
+                                <td> mardi </td>
+                                <td> 9h-19h </td>
+                            </tr>
+                            <tr>
+                                <td> mercredi </td>
+                                <td> 9h-19h </td>
+                            </tr>
+                            <tr>
+                                <td> jeudi </td>
+                                <td> 9h-19h </td>
+                            </tr>
+                            <tr>
+                                <td> vendredi </td>
+                                <td> 9h-19h </td>
+                            </tr>
+                            <tr>
+                                <td> samdi </td>
+                                <td> 9h-19h </td>
+                            </tr>
+                            <tr>
+                                <td> dimanche </td>
+                                <td> 9h-12h </td>
+                            </tr>
+
+
+                        </tbody>
+                        
+
+
+                    </table>
                 </div>
             </div>
         </div>
