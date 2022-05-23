@@ -167,6 +167,12 @@ img#fleche{
 #map{
     background-color: #daeaf6;
 }
+
+.vide{
+    height: 10em;
+    background-color: #daeaf6;
+}
+
 span.carte{
 
     font-size: 3.2em;
@@ -174,6 +180,19 @@ span.carte{
     font-family: arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
+}
+
+.txt-heure{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+span.table{
+    font-size: 1em;
 }
 .heure{
     vertical-align: middle;
@@ -228,6 +247,11 @@ input{
     height: 3em;
     font-size:x-large;
     margin-left: 20%;
+    box-shadow: 3px 5px 5px grey;
+}
+input:hover{
+    background-color: rgb(86, 176, 217);
+    box-shadow: 0px 0px 5px #daeaf6;
 }
 
 #tel{
@@ -286,8 +310,22 @@ html{
 
 table{
     table-layout: auto;
-    
+    justify-content: center;
+    border-collapse: collapse;
+    border-spacing: 2000px;
+    width: 50%;
 }
+td{
+    justify-content: center;
+    text-align: center;
+}
+
+
+th{
+    font-size: 2em; 
+    font-family: arial, Helvetica, sans-serif; 
+}
+
 
 #img_info{
     display: flex;

@@ -5,15 +5,12 @@ body {
 }
 
 fieldset {
-    margin-top: 70px;
-    width: 27%;
-    background-color: rgb(59 160 246);
-    box-shadow: 5px 5px 20px 1px 10px rgb(85, 85, 85);
+    width: 50%;
+    background-color: #124E96;
     border: 0px;
-    padding-left: 10px;
     border-radius: 10px 10px 10px 10px;
     color: white;
-    height: 430px;
+    height: 250px;
     
 }
 
