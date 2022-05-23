@@ -1,322 +1,65 @@
-body{
-    background-image: url(../img/panda.jpg);
-    background-attachment: fixed;
-    background-size:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.Titre{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 1.2em;
-    justify-content: start;
-   
-    margin-left: 1%;
-    margin-top: -1%;
-}
-#corps{
-    display: flex;
-    color: black;
-    background-color:#daeaf6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-}
-#autres-questions{
-    margin-left: -5em;
-    color: black;
-    text-align: center ;
-
+body {
+    padding: 0px;
+    margin: 0px;
 
 }
 
-.logos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 10%;
-}
-
-.logo{
-    height: 4.5em;
-    margin-left: 25%;
-    margin-bottom: 1%;
-
-}
-div.horaires{
-    margin-top: 2%;
-
-}
-img#calendrier{
-    max-width: 5em;
-    max-height: 5em;
-    margin-left: 1%;
-    vertical-align: middle;
-}
-img#horloge{
-    max-width: 5em;
-    max-height: 5em;
-    margin-left: 1%;
-    vertical-align: middle;
-
-}
-span.text{
-    font-size: 90px;
-    margin-left: 3%;
-    justify-content: space-around;
-    font-family: arial, Helvetica, sans-serif;
-}
-span.texte{
-    font-size: 1.6em;
-    justify-content: center;
-    font-family: arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    
-}
-textarea#Question{
-    width: 21em;
-    height: 1.7em;
-    font-size: 1rem;
-    letter-spacing: 0.01em;
-    margin-left: 1.6em;
-    border-radius: 5px;
-    border-color: #124E96;
-    resize: none;
-    }
-textarea#sujet{
-    width: 44.5em;
-    height: 1.7em;
-    font-size: 1rem;
-    letter-spacing: 0.01em; 
-    margin-left: 1.6em;
-    border-radius: 5px;
-    border-color: #124E96;
-    resize: none;
-}
-textarea#Mail{
-    width: 21em;
-    height: 1.7em;
-    font-size: 1rem;
-    letter-spacing: 0.01em; 
-    margin-left: 1.6em;
-    border-radius: 5px;
-    border-color: #124E96;
-    resize: none;
-
-}
-textarea#ameliorer{
-    width: 29.7em;
-    height: 10em;
-    font-size: 1.5rem;
-    letter-spacing: 0.001em; 
-    margin-left: 1em;
-    border-radius: 5px;
-    border-color: #124E96;
-    resize: vertical;
-}
-
-
-
-.formulaire{
-    font-size: 2em;
-    font-family: arial, Helvetica, sans-serif;
-    border-radius: 15%;
-    width: 28.5em;
-    height: 30em;
-    margin-top: 5em;
-    align-content: center;
-    margin-left: 10%;
-
-
-}
-span.Question{
-    font-size: 2em;
-
-}
-span.contact_titre{
-    font-size: 10em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #124E96;
-}
-
-img#fleche{
-    width: 10%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.titre_page{
-    margin-top: 20%;
-    text-align: center;
-}
-
-
-.map{
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    background-color: #daeaf6;
-}
-
-#map{
-    background-color: #daeaf6;
-}
-span.carte{
-
-    font-size: 3.2em;
-    margin-bottom: 2%;  
-    font-family: arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-}
-.heure{
-    vertical-align: middle;
-    display: flex;
-    margin-right: 50em;
-}
-.date{
-    display: flex;
-    vertical-align: middle;
-    margin-left: 50em;
-
-
-}
-.text_date{
-    max-height: 2em;
-
-}
-
-.text_heure{
-    max-height: 2em;
-
-}
-.contact-direct{
-    display: flex;
-    flex-direction: row;
-}
-
-.bande a:hover{
-    border-radius: 5px;
+fieldset {
+    margin-top: 70px;
+    width: 27%;
+    background-color: rgb(59, 130, 246);
+    box-shadow: 5px 5px 20px 1px 10px rgb(85, 85, 85);
+    border: 0px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 10px;
     color: white;
-    background-color: #0a3444;
-}
-
-.bande a{
-    font-family: arial, Helvetica, sans-serif;
-
-    font-size: 2em;
-    color: black;
-}
-
-.bande b{
-    font-family: arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color:#0D8ABC;
-
-}
-input{
-    background-color: rgb(98, 200, 247);
-    border:1px solid #000000;
-    border-radius:5px;
-    width: 6em;
-    height: 3em;
-    font-size:x-large;
-    margin-left: 20%;
-}
-
-#tel{
-     
-}
-
-
-
-.info-direct{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#daeaf6 ;
-    margin-top: 30%;
-}
-img#mail{
-    max-width: 5em;
-}
-
-img#tel{
-    max-width: 5em;
-}
-
-img#agence{
-    max-width: 5em;
-}
-
-#email{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#telephone{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.premiere_ligne{
-    margin-top: -5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    margin-bottom: 10%;
-}
-
-.deuxieme_ligne{
-    margin-bottom: 10%;
-
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-table{
-    table-layout: auto;
+    height: 430px;
     
 }
 
-#img_info{
-    display: flex;
-    flex-direction: column;
+h1 {
+    font-family: andalus;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
 }
 
 
+hr {
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 40%;
+}
 
+ul li {
+    margin-left: 20px;
+    color: white;
+}
+#formlogin {
+    margin: 20px 35px;
+    color: #0d8abc;
+    background-color: white;
+    width: 80%;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 7px;
 
+}
 
-@media screen and (max-width: 800px){
-    body{
-        justify-content: center;
-        display:empty;
-        background-image: url(../img/Xcolozoo-deco.jpg);
-    }
-    .Titre{
-        justify-content: center;
-    }
-    .info-direct{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .bande{
-        display: row;
-    }
-    .formulaire{
-        margin-left: auto;
-        margin-right: auto;
-    }
+#formlogin:hover{
+    color: white;
+    background-color: #124e96;
+
+}
+
+input {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 100%;
+
 }
