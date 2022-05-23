@@ -48,17 +48,27 @@ if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer'])
 	
 	";
 
+	$text2 = "
+	Nous vous confirmons la bonne réception de votre message suivant : 
+
+	Nom : $Nom
+	Prenom : $Prenom
+	Telephone : $Telephone
+	Adresse mail : $Mail
+
+	Sujet : $sujet
+
+	Texte : $ameliorer
+	
+	";
+
 	smtpMailer("infinites.measure@gmail.com","infinites.measure@gmail.com","Infinites Measure","Nouveau contact sur le site Infinite Measure : $sujet",$text);
 
-	smtpMailer($Mail,"infinites.measure@gmail.com","Infinites Measure","Confirmation d'envoie de mail à propos de : $sujet",$text);
+	smtpMailer($Mail,"infinites.measure@gmail.com","Infinites Measure","Confirmation d'envoie de mail à propos de : $sujet",$text2);
 
 	header('Location: contact.php');
 
 }
-
-
-
-
 
 
 ?>
