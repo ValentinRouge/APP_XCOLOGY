@@ -48,14 +48,8 @@ body{
 
 }
 div.horaires{
-    display: flex;
-    flex-direction: row;
     margin-top: 2%;
-    background-color: #daeaf6;
-    justify-content: space-between;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: -40%;
+
 }
 img#calendrier{
     max-width: 5em;
@@ -80,7 +74,8 @@ span.texte{
     font-size: 1.6em;
     justify-content: center;
     font-family: arial, Helvetica, sans-serif;
-    
+    display: flex;
+    flex-direction: column;
     
 }
 textarea#Question{
@@ -183,10 +178,13 @@ span.carte{
 .heure{
     vertical-align: middle;
     display: flex;
+    margin-right: 50em;
 }
 .date{
     display: flex;
     vertical-align: middle;
+    margin-left: 50em;
+
 
 }
 .text_date{
@@ -284,6 +282,16 @@ img#agence{
 
 html{
     scroll-behavior: smooth;
+}
+
+table{
+    table-layout: auto;
+    
+}
+
+#img_info{
+    display: flex;
+    flex-direction: column;
 }
 
 
