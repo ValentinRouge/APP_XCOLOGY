@@ -21,11 +21,19 @@ function smtpMailer($to, $from, $from_name, $subject, $body) {
 	$mail->Username = 'infinites.measure@gmail.com';
 	$mail->Password = 'Xcology2022';
 
+	$mail->SMTPOptions = array(
+		'ssl' => array(
+		'verify_peer' => false,
+		'verify_peer_name' => false,
+		'allow_self_signed' => true
+		)
+		);
+
 	$mail->SetFrom($from, $from_name);
 	$mail->Subject = $subject;
 	$mail->Body = $body;
 	$mail->AddAddress($to);
-	
+
 	if(!$mail->Send()) {
 		return 'Mail error: '.$mail->ErrorInfo;
 	} else {
