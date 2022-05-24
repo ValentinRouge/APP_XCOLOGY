@@ -3,6 +3,7 @@
 include 'admin-mail-func.php';
 
 if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer']) && isset($_POST['sujet']) && isset($_POST['Mail']) && isset($_POST['Telephone'])){
+	echo 'ici';
 	$Nom = $_POST['Nom']; 
     $Prenom = $_POST['Prenom'];
     $ameliorer = $_POST['ameliorer'];
@@ -40,7 +41,7 @@ if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer'])
 
 	smtpMailer($Mail,"infinites.measure@gmail.com","Infinites Measure","Confirmation d'envoie de mail à propos de : $sujet",$text2);
 
-	header('Location: contact.php#autres-questions?mail=1');
+	//header('Location: contact.php#autres-questions?mail=1');
 }
 
 
