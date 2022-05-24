@@ -6,6 +6,7 @@ var past2;
 var state = 0;
 var founded = [];
 var precID;
+//start timer
 
 window.addEventListener("DOMContentLoaded", (event) => {
     images = new Object();
@@ -132,6 +133,7 @@ function onCardClick(Element){
                     state = 0;
                     if (founded.length == 16){
                         alert("Vous avez gagné !")
+                        //break timer
                     }
                 } else {
                     state = 1;
@@ -139,5 +141,6 @@ function onCardClick(Element){
                 break;
         }
     }
+
     
 };
