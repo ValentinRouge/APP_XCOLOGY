@@ -37,14 +37,12 @@ if(isset($_POST['username']) && isset($_POST['password']))
                     header("Location: mon-compte.php");
                 }
             } else {
-                echo "la";
-                //header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
+                header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
             }
         }
         else
         {
-            echo "ici";
-           //header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
+           header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
         }
     }
     else
