@@ -4,6 +4,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 if(isset($_POST['username']))
 {
     include 'connectionToBDD.php';
+    include 'admin-mail-func.php';
     // connexion à la base de données
     
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
@@ -26,8 +27,13 @@ if(isset($_POST['username']))
                     $requete = "SELECT pass_relnit_ID FROM password_reinitialisation where User_id = '$userID' order by date_time DESC LIMIT 1";
                     $exec_requete = mysqli_query($connection,$requete);
                     $value = $exec_requete->fetch_assoc();
+                    $passID = $value['pass_relnit_ID'];
 
-                    echo $value['pass_relnit_ID'];
+                    $text = "Pour réinitialiser votre mot de passe cliquer sur le lien suivant : https://appg10b.herogu.garageisep.com/new-password.php?id=$passID";
+                    
+                    smtpMailer($email,"infinites.measure@gmail.com","Infinites Measure","Réinitialisation de mot de passe",$text);
+                    
+                    header("Location: connexion.php?erreur=3");
     
                 }
             } else {
