@@ -3,7 +3,6 @@
 include 'admin-mail-func.php';
 
 if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer']) && isset($_POST['sujet']) && isset($_POST['Mail']) && isset($_POST['Telephone'])){
-	echo 'ici';
 	$Nom = $_POST['Nom']; 
     $Prenom = $_POST['Prenom'];
     $ameliorer = $_POST['ameliorer'];
@@ -37,11 +36,11 @@ if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer'])
 	
 	";
 
-	echo smtpMailer("infinites.measure@gmail.com","infinites.measure@gmail.com","Infinites Measure","Nouveau contact sur le site Infinite Measure : $sujet",$text);
+	smtpMailer("infinites.measure@gmail.com","infinites.measure@gmail.com","Infinites Measure","Nouveau contact sur le site Infinite Measure : $sujet",$text);
 
-	echo smtpMailer($Mail,"infinites.measure@gmail.com","Infinites Measure","Confirmation d'envoie de mail à propos de : $sujet",$text2);
+	smtpMailer($Mail,"infinites.measure@gmail.com","Infinites Measure","Confirmation d'envoie de mail à propos de : $sujet",$text2);
 
-	//header('Location: contact.php#autres-questions?mail=1');
+	header('Location: contact.php#autres-questions?mail=1');
 }
 
 
