@@ -1,15 +1,3 @@
-* {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 .ligneh{ 
@@ -32,7 +20,7 @@ margin: auto;
 
 }
 
-.caption{
+.caption1{
     color:#0e161b;
     position:absolute;
     top: 50%;
@@ -57,6 +45,6 @@ margin: auto;
     font-weight: bolder;
 }
 
-a:hover {
-    color: #124e96;
+.ColoraZoo {
+    align-items: center;
 }
