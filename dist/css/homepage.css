@@ -154,17 +154,13 @@ h1 span {
 }
 
 
-/* News */
+/* Actualites */
 
 .section-titre {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
+    text-align: center;
 
 }
 
-.section-titre::before {
-    content: "";
-    position: absolute;
-    background-color: ;
-}
