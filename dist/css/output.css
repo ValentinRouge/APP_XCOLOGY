@@ -468,40 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .btn-header {
   bottom: 50%;
   cursor: pointer;
@@ -647,6 +613,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -671,12 +645,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[80\] {
+  height: 80;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
 
 .max-h-16 {
   max-height: 4rem;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-\[80\%\] {
+  min-height: 80%;
+}
+
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 
 .w-full {
@@ -697,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .grow {
@@ -1005,6 +1019,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .md\:w-3\/5 {
     width: 60%;
   }
