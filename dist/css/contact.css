@@ -322,6 +322,7 @@ table{
     justify-content: center;
     border-collapse: collapse;
     border-spacing: 2000px;
+    margin-left: 20%;
     width: 50%;
 }
 td{
