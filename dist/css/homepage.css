@@ -164,8 +164,28 @@ hr {
     border-width: 2px;
   } 
 
+
+.Actualites {
+    background-image: url(../img/bgactu1.jpg) ;
+}
+
 .ColoraZoo {
     display: block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.LaMarcheDesElephants {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.EnquêteAuZoo {
+    display: block;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -178,7 +198,7 @@ hr {
 .ligneh::after { 
 content: ""; 
 flex: 1 1; 
-border-bottom: 2px solid #124e96 ; 
+border-bottom: 1px solid #124e96 ; 
 margin: auto; 
 } 
 
@@ -187,20 +207,10 @@ margin: auto;
     color: #124e96;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+    font-weight: bolder;
 
 }
 
-.caption1{
-    color:#0e161b;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 0em;
-    padding: 16px;
-    font-size: 20px;
-}
 
 .date {
     text-align: center;
