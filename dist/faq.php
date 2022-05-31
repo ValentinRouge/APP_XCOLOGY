@@ -13,7 +13,7 @@
 <body>
 	
 	<?php include 'header.php'; 
-            include 'connectionToBDD.php';
+            include 'php_func/connectionToBDD.php';
             ?>
 	<div class="inside">
 		
