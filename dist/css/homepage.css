@@ -165,30 +165,16 @@ hr {
   } 
 
 
-.Actualites {
-    background-image: url(../img/bgactu1.jpg) ;
+
+.imageevent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 2px;
 }
 
-.ColoraZoo {
-    display: block ;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.LaMarcheDesElephants {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.EnquêteAuZoo {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .ligneh{ 
     display: flex; 
@@ -211,14 +197,20 @@ margin: auto;
 
 }
 
-
-.date {
-    text-align: center;
+nav.date {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-left: 20px;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bolder;
 }
 
-.lien {
+
+nav.lien {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
     text-align: center;
     padding: 16px;
     font-size: 20px;
@@ -227,4 +219,17 @@ margin: auto;
 
 a:hover {
     color: #124e96;
+}
+
+.zonesinge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zsingebouton {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
 }
