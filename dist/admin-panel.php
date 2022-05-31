@@ -19,7 +19,7 @@
 
                     <div id="FAQ">
                         <h1 class="text-3xl my-2 text-center underline">Gestion de la FAQ</h1>
-                        <table class="border-collapse table-auto w-11/12 mx-auto mb-2">
+                        <table class="border-collapse table-auto w-11/12 mx-auto mb-2 rounded-sm">
                             <tr>
                                 <th class="faq-td-td bg-XBlueStrong text-white font-bold">Question</th>
                                 <th class="faq-td-td bg-XBlueStrong text-white font-bold">Réponse</th>
@@ -55,7 +55,16 @@
 
                     <div id="User">
                         <h1 class="text-3xl my-2 text-center underline">Gestion des utilisateurs</h1>
-                        <table class="border-collapse table-auto w-11/12 mx-auto mb-2">
+                        
+                        <div class="flex flex-row gap-2 justify-center flex-wrap mb-2">
+                            <p>Chercher un utilisateur : </p>
+                            <form action="admin-panel.php" method="POST">
+                                <input type="text" placeholder="Nom, email ou pseudo" name="search" id="search" class="rounded-sm px-1 w-60 outline-none focus:border-XBlueMiddle border-2 border-transparent">
+                                <input type="submit" value="Rechercher" class="hover:text-white text-XBlueStrong hover:bg-XBlueMiddle transition rounded-md px-3 py-1 border-2 bg-XBlueLight active:bg-XBlueStrong border-XBlueStrong hover:border-transparent">
+                            </form>
+                        </div>
+
+                        <table class="border-collapse table-auto w-11/12 mx-auto mb-2 rounded-sm">
                             <tr>
                                 <th class="faq-td-td bg-XBlueStrong text-white font-bold">Nom</th>
                                 <th class="faq-td-td bg-XBlueStrong text-white font-bold">Prénom</th>
@@ -65,8 +74,13 @@
 
                             </tr>
                             <?php
+                            $search_string = "";
+                            if (isset($_POST['search'])){
+                                $search_string = $_POST['search'];
+                            }
 
-                            $requet = "SELECT User_id, Pseudo,admin, email, lastName, firstName FROM User ORDER BY User_id";
+                            $requet = "SELECT User_id, Pseudo,admin, email, lastName, firstName FROM User WHERE email LIKE '%$search_string%' OR User.Pseudo LIKE '%$search_string%' OR User.lastName LIKE '%$search_string%' OR User.firstName LIKE '%$search_string%' ORDER BY User_id
+                            ";
                             $result = $connection->query($requet);
                             while($row = $result->fetch_assoc()){ 
                             ?>

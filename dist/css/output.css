@@ -601,24 +601,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
-.ml-40 {
-  margin-left: 10rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.ml-40 {
+  margin-left: 10rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .flex {
@@ -645,26 +641,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[80\] {
-  height: 80;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -673,16 +649,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 4rem;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[80\%\] {
-  min-height: 80%;
 }
 
 .min-h-\[70vh\] {
@@ -709,8 +677,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 83.333333%;
 }
 
-.min-w-full {
-  min-width: 100%;
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .grow {
@@ -788,6 +764,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -805,8 +785,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border-4 {
   border-width: 4px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-r-4 {
@@ -816,6 +808,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-XBlueStrong {
   --tw-border-opacity: 1;
   border-color: rgb(18 78 150 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-XBlueLight {
@@ -866,6 +862,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pl-1 {
@@ -959,6 +960,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.5;
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .blur-sm {
   --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -998,14 +1004,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
 .hover\:bg-XBlueStrong:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(18 78 150 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-XBlueMiddle:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 138 188 / var(--tw-bg-opacity));
+}
+
 .hover\:text-XBlueLight:hover {
   --tw-text-opacity: 1;
   color: rgb(218 234 246 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-4:focus {
+  border-width: 4px;
+}
+
+.focus\:border-2:focus {
+  border-width: 2px;
+}
+
+.focus\:border-XBlueStrong:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 78 150 / var(--tw-border-opacity));
+}
+
+.focus\:border-XBlueMiddle:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(11 138 188 / var(--tw-border-opacity));
+}
+
+.active\:border:active {
+  border-width: 1px;
+}
+
+.active\:border-XBlueStrong:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 78 150 / var(--tw-border-opacity));
+}
+
+.active\:bg-XBlueStrong:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 78 150 / var(--tw-bg-opacity));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1019,17 +1075,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .md\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .md\:w-3\/5 {

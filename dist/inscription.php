@@ -52,7 +52,7 @@
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
                     if($err==1 || $err==2)
-                        echo "<p style='color:red'>Les mots de passe ne sont pas identiques</p>";
+                        echo "<p style='color:red;text-align:center'>Les mots de passe ne sont pas identiques</p>";
                 }
             ?>
         </div>
