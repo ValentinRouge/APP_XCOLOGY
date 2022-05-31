@@ -14,10 +14,10 @@
                 }
             ?> 
         </div>
-
+            
         <title>Capteur zone singe</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
         <link rel="stylesheet" href="css/capteurs.css">
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     </head>
     <body class="bg-XBlueLight">
         <?php 
