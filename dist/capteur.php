@@ -16,6 +16,7 @@
         </div>
 
         <title>Capteur zone singe</title>
+        <link rel="stylesheet" href="css/capteurs.css">
     </head>
     <body class="bg-XBlueLight">
         <?php 
@@ -24,7 +25,7 @@
         ?>
         <div class="relative">
             <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 
-            <h1 class="absolute z-10 tracking-wider text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold">Capteur zone singe</h1>
+            <h1 class="absolute z-10 tracking-wider text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold container"><span>Capteur </span><span>zone </span> <span>singe</span></h1>
         </div>
 
         <div class="flex flex-row flex-wrap justify-center ">
