@@ -1,62 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
 body {
-    padding: 0px;
-    margin: 0px;
+    background: #DAEAF6;
 
 }
 
-fieldset {
-    width: 50%;
-    background-color: #124E96;
-    border: 0px;
-    border-radius: 10px 10px 10px 10px;
-    color: white;
-    height: 250px;
-    
+.container2 {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 100px auto;
 }
 
-h1 {
-    font-family: andalus;
-    letter-spacing: 3px;
-    text-align: center;
-    color: white;
-}
-
-
-hr {
-    border: 5px solid white;
-    border-radius: 10px;
-    width: 40%;
-}
-
-ul li {
-    margin-left: 20px;
-    color: white;
-}
-#formlogin {
-    margin: 20px 20px;
-    color: #0d8abc;
-    background-color: white;
-    width: 80%;
-    font-size: 17px;
-    border-radius: 20px;
-    border: 1px solid white;
-    padding: 7px;
-
-}
-
-#formlogin:hover{
-    color: white;
-    background-color: #124e96;
-
-}
-
-input {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 1px solid white;
-    color: white;
+.wrapper {
     width: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
 
+.wrapper .title {
+    line-height: 90px;
+    background: #0D8ABC;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #0D8ABC;
+    box-shadow: inset 0px 0px 2px 2px #0D8ABC;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #0D8ABC;
+    border: 1px solid #0D8ABC;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #0D8ABC;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+
+}
+
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #0D8ABC;
+    border: 1px solid #0D8ABC;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background: #07658a;
+
+}
+
+.signuplink {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.signuplink a {
+    color: #0D8ABC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
