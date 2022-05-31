@@ -21,7 +21,7 @@
     <body class="bg-XBlueLight">
         <?php 
             include 'header.php';
-            include 'connectionToBDD.php'
+            include 'php_func/connectionToBDD.php'
         ?>
         <div class="relative">
             <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 

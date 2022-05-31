@@ -11,7 +11,7 @@
     <body class="bg-XBlueLight min-h-screen">
         <?php 
             include 'header.php';
-            include 'connectionToBDD.php';
+            include 'php_func/connectionToBDD.php';
             if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
             $connexionID = $_SESSION['sessionID'];

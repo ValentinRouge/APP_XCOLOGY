@@ -3,7 +3,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 if(isset($_GET['id']))
 {
-    include 'connectionToBDD.php';
+    include 'php_func/connectionToBDD.php';
 
     $id = mysqli_real_escape_string($connection,htmlspecialchars($_GET['id']));
 

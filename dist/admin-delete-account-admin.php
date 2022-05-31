@@ -1,5 +1,5 @@
 <?php
-include 'connectionToBDD.php';
+include 'php_func/connectionToBDD.php';
 
 $UsrID = $_GET['id'];
 
