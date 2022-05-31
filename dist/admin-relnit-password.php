@@ -3,8 +3,8 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 if(isset($_POST['username']))
 {
-    include 'connectionToBDD.php';
-    include 'admin-mail-func.php';
+    include 'php_func/connectionToBDD.php';
+    include 'php_func/mail-func.php';
     // connexion à la base de données
     
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars

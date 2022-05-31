@@ -2,7 +2,7 @@
 
 if(isset($_GET['id']) && isset($_GET['adm']))
 {
-    include 'connectionToBDD.php';
+    include 'php_func/connectionToBDD.php';
 
     $id = mysqli_real_escape_string($connection,htmlspecialchars($_GET['id']));
     $adm = mysqli_real_escape_string($connection,htmlspecialchars($_GET['adm']));

@@ -1,6 +1,6 @@
 <?php
 
-include 'admin-mail-func.php';
+include 'php_func/mail-func.php';
 
 if(isset($_POST['Nom']) && isset($_POST['Prenom']) && isset($_POST['ameliorer']) && isset($_POST['sujet']) && isset($_POST['Mail']) && isset($_POST['Telephone'])){
 	$Nom = $_POST['Nom']; 

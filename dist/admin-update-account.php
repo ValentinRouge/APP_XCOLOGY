@@ -3,7 +3,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 if(isset($_POST['Pseudo']) && isset($_POST['LName']) && isset($_POST['FName']) && isset($_POST['Email']))
 {
-    include 'connectionToBDD.php';
+    include 'php_func/connectionToBDD.php';
 
     $Pseudo = mysqli_real_escape_string($connection,htmlspecialchars($_POST['Pseudo'])); 
     $LName = mysqli_real_escape_string($connection,htmlspecialchars($_POST['LName']));

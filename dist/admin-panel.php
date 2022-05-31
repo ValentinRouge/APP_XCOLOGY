@@ -14,7 +14,7 @@
                 <body class="bg-XBlueLight">
                     <?php 
                         include 'header.php';
-                        include 'connectionToBDD.php';
+                        include 'php_func/connectionToBDD.php';
                     ?>
 
                     <div id="FAQ">

@@ -3,7 +3,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 if(isset($_POST['pass']) && isset($_POST['pass2']))
 {
-    include 'connectionToBDD.php';
+    include 'php_func/connectionToBDD.php';
 
     $pass = mysqli_real_escape_string($connection,htmlspecialchars($_POST['pass'])); 
     $pass2 = mysqli_real_escape_string($connection,htmlspecialchars($_POST['pass2']));

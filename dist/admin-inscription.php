@@ -3,7 +3,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2']) && isset($_POST['pseudo']))
 {
-    include 'connectionToBDD.php';
+    include 'php_func/connectionToBDD.php';
 
     $username = mysqli_real_escape_string($connection,htmlspecialchars($_POST['username'])); 
     $password = mysqli_real_escape_string($connection,htmlspecialchars($_POST['password']));

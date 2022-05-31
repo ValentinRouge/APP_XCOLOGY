@@ -2,7 +2,7 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 
-include 'connectionToBDD.php';
+include 'php_func/connectionToBDD.php';
 
 $connID = $_SESSION['sessionID'];
 
