@@ -33,7 +33,7 @@
                     <h3>Température</h3>
                     <p class="text-4xl font-bold">
                     <?php
-                        $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 1 ORDER BY CD.date_time";
+                        $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 1 ORDER BY CD.date_time DESC LIMIT 1";
                         $result = $connection->query($requet);
                         $row = $result->fetch_assoc();
                         echo $row['value']." ".$row['unité'];
