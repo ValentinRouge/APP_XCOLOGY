@@ -39,10 +39,10 @@ function thisOne($x, $data_tab, $connection){
     $trame = substr($trame, 3);
     list($o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($trame,"%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
     $v = hexdec($v)/100;
-    if ($c == 4){
+    if ($c == 3){
         $requete = "INSERT INTO capteur_data(value, date_time, data_type_id) VALUES ($v, now(), 1)";
         $exec_requete = mysqli_query($connection,$requete);
-    } else if ($c == 3){
+    } else if ($c == 4){
         $requete = "INSERT INTO capteur_data(value, date_time, data_type_id) VALUES ($v, now(), 2)";
         $exec_requete = mysqli_query($connection,$requete);
     }
