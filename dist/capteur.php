@@ -20,7 +20,9 @@
     <body class="bg-XBlueLight">
         <?php 
             include 'header.php';
-            include 'php_func/connectionToBDD.php'
+            include 'php_func/connectionToBDD.php'; 
+            include 'admin-get-from-paserelle.php';
+            addToDb();
         ?>
         <div class="relative">
             <img class="w-full blur-sm" src="/img/page-singe.jpeg" alt="image d'un singe"> 
@@ -44,7 +46,7 @@
                     <h3>Humidité</h3>
                     <p class="text-4xl font-bold">
                     <?php
-                        $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 2 ORDER BY CD.date_time";
+                        $requet = "SELECT CD.value, ct.name,ct.unité FROM capteur_data CD LEFT JOIN capteur_type ct on CD.data_type_id = ct.capteur_type_id WHERE CD.data_type_id = 2 ORDER BY CD.date_time DESC LIMIT 1";
                         $result = $connection->query($requet);
                         $row = $result->fetch_assoc();
                         echo $row['value']." ".$row['unité'];
